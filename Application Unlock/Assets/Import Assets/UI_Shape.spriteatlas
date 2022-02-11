@@ -1,0 +1,243 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI_Shape
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 871186bc0d3194c43a30969bab2bdfa9, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 9b75de00bdf9740988287b8df6afd5fb, type: 3}
+  - {fileID: 21300000, guid: 4ff731301cead463fa6eb49d3658eaec, type: 3}
+  - {fileID: 21300000, guid: 48b86640f273241e880c9b6c3c324cf8, type: 3}
+  - {fileID: 21300000, guid: 223b0d40c46d54339a09b9103fc98284, type: 3}
+  - {fileID: 21300000, guid: 93457780a5ac44ae8b971b48507f90e5, type: 3}
+  - {fileID: 21300000, guid: b1a07c80c4c5d406a8db30b6bfd39225, type: 3}
+  - {fileID: 21300000, guid: e5dcd0b051d2541d4b53d0d202665b9b, type: 3}
+  - {fileID: 21300000, guid: b5d246e084ed6457386793cfc2d4be5b, type: 3}
+  - {fileID: 21300000, guid: 62c460917a57243d38e265f4da8e2c94, type: 3}
+  - {fileID: 21300000, guid: fd5a4fc1a2d1a4d77bf68abd188092fb, type: 3}
+  - {fileID: 21300000, guid: 679b53e1abc3d4686ad690aa88542b77, type: 3}
+  - {fileID: 21300000, guid: 70687072e04a24f01b59252505d1502f, type: 3}
+  - {fileID: 21300000, guid: bac75f822ea214f11a80370f4a0de696, type: 3}
+  - {fileID: 21300000, guid: 4ca39ca2217b34d6f9ccd08caf49bff5, type: 3}
+  - {fileID: 21300000, guid: 4d41fbd251993443cb3f0251605587a5, type: 3}
+  - {fileID: 21300000, guid: f06845038961b409981d6ccaa895f64c, type: 3}
+  - {fileID: 21300000, guid: 6e4f4c0390c77404fbc0e6716111c623, type: 3}
+  - {fileID: 21300000, guid: c145c383dcd344d4e8014fd1813b8f9a, type: 3}
+  - {fileID: 21300000, guid: d7bd1c83e77a343a6afa3964fa87f2eb, type: 3}
+  - {fileID: 21300000, guid: de8c83936f69c4723a21013e271025a6, type: 3}
+  - {fileID: 21300000, guid: a7ff66e362dc643b3869a8f8b4a7ab2b, type: 3}
+  - {fileID: 21300000, guid: 15abb2447a6e64bf9939ad420dba0416, type: 3}
+  - {fileID: 21300000, guid: ba09a8352bddf4559bacdb398937a194, type: 3}
+  - {fileID: 21300000, guid: 47c3cc854db7e4b6e862398d2f60cdb6, type: 3}
+  - {fileID: 21300000, guid: 4e1443b5fedb04b53b889dc402599498, type: 3}
+  - {fileID: 21300000, guid: 712619b5b48174f0bac357c5bd577dfb, type: 3}
+  - {fileID: 21300000, guid: ac66efb5b388046428a79fb206131f8d, type: 3}
+  - {fileID: 21300000, guid: ebbb82064bf3f4d7c9c1285c737b6fb0, type: 3}
+  - {fileID: 21300000, guid: d582b21656b734b8597ab6c12501b152, type: 3}
+  - {fileID: 21300000, guid: dca6661667d1640579c9b47c374018c3, type: 3}
+  - {fileID: 21300000, guid: ea97c726e1989458abb19174bb1a73ff, type: 3}
+  - {fileID: 21300000, guid: ae345b367fd524f6b9177eb5f4f471a0, type: 3}
+  - {fileID: 21300000, guid: 392e37466220a4cdf88503d36553dae2, type: 3}
+  - {fileID: 21300000, guid: 4af8db46adf5a44c68518c6c8923cbdb, type: 3}
+  - {fileID: 21300000, guid: cc9151669908e4e85837bb4b4e2a3e06, type: 3}
+  - {fileID: 21300000, guid: dca6f3667624f48c3854ed640667233d, type: 3}
+  - {fileID: 21300000, guid: 20e3e2a6f8b884abc9a2dbf1c5c749b4, type: 3}
+  - {fileID: 21300000, guid: 2a5966f6e29e147fc8b1b4ef31670892, type: 3}
+  - {fileID: 21300000, guid: a98fb4074694647e4af957a875831e01, type: 3}
+  - {fileID: 21300000, guid: 26eba137791a2422ea5bea2f668ec78c, type: 3}
+  - {fileID: 21300000, guid: 6948ac77b67104ac796841a79b060163, type: 3}
+  - {fileID: 21300000, guid: 3fe9c9786552e4e86835b57e3545eb1b, type: 3}
+  - {fileID: 21300000, guid: 4596b288f688240be9303691a0bce9a0, type: 3}
+  - {fileID: 21300000, guid: 101e14c87bc8945d2afc0921eb0dbf65, type: 3}
+  - {fileID: 21300000, guid: 1bc30cc899e9d405885f64f2d81aa0df, type: 3}
+  - {fileID: 21300000, guid: 96782b29f9a5d4916b257537472cf25b, type: 3}
+  - {fileID: 21300000, guid: 3a71a4b9e9fff4807a07c6b63b097f4a, type: 3}
+  - {fileID: 21300000, guid: 5f18cfb933b374f4db1f912fca1ec409, type: 3}
+  - {fileID: 21300000, guid: 47c7c1c924de64b2ba92828353a936f9, type: 3}
+  - {fileID: 21300000, guid: fde790f9d6f7a4019aeddbe2e18687a0, type: 3}
+  - {fileID: 21300000, guid: c3e76af924ae54eae984d038ce5049a3, type: 3}
+  - {fileID: 21300000, guid: 991ae80af95d540a5b90c786886ab090, type: 3}
+  - {fileID: 21300000, guid: 5e7b462a249b342639e95b05ffd2c513, type: 3}
+  - {fileID: 21300000, guid: b3b2035ab71f2494498528b42075c0ca, type: 3}
+  - {fileID: 21300000, guid: fe21d27a780b643f58f831ab19c5a69f, type: 3}
+  - {fileID: 21300000, guid: f73163ba4a96847c3b5cb230c2a75a68, type: 3}
+  - {fileID: 21300000, guid: e61182ca7bb7f453c8e1837559dd81d7, type: 3}
+  - {fileID: 21300000, guid: 8af0542bdfdfe42478f1d0a0c77ed7f9, type: 3}
+  - {fileID: 21300000, guid: 3e07bb3be63534ce1b7cd37fc9d9a88d, type: 3}
+  - {fileID: 21300000, guid: 82055c3bfd2c04a389665528a82cc9c7, type: 3}
+  - {fileID: 21300000, guid: adb3237bdac444ff5a7a3600b21fba77, type: 3}
+  - {fileID: 21300000, guid: 3666367b4bc434cfdafcb059839ec907, type: 3}
+  - {fileID: 21300000, guid: 8af5109b8f46145a78e64b840bf19ec0, type: 3}
+  - {fileID: 21300000, guid: 637aad9b0a8b745c4b03c35528cedbc7, type: 3}
+  - {fileID: 21300000, guid: 19febd9b37e524beabcbbed7132cf10c, type: 3}
+  - {fileID: 21300000, guid: 1b1d1fcb588bc4cc6babbe6b4d5f0872, type: 3}
+  - {fileID: 21300000, guid: 0de9ae1c453904b54a52569911481cdc, type: 3}
+  - {fileID: 21300000, guid: befceb5c164ba4f5ab8918c15709777d, type: 3}
+  - {fileID: 21300000, guid: 1461cb7cdaefe4143badc1eba3ff1291, type: 3}
+  - {fileID: 21300000, guid: 754e758c463d940ca809c62a6b182f2e, type: 3}
+  - {fileID: 21300000, guid: 7f3c53cc6b6724193bb662e8ecb7757c, type: 3}
+  - {fileID: 21300000, guid: dfb84e2dfd2bd4d2c9855f3766a7abc1, type: 3}
+  - {fileID: 21300000, guid: eacbee2d35d10456bb7e185cfc929c6b, type: 3}
+  - {fileID: 21300000, guid: e013953d4dd8544a7adf031b0ade79d0, type: 3}
+  - {fileID: 21300000, guid: 5caa914dd2ee54a2e8d7f0b5c4daf7e7, type: 3}
+  - {fileID: 21300000, guid: a01a2e4dddc204fa29b4af250bc479b4, type: 3}
+  - {fileID: 21300000, guid: f270745d2a67e43ad928605e36522557, type: 3}
+  - {fileID: 21300000, guid: 58329d6d8c9ac42fcbdbbb5f7bb7fd28, type: 3}
+  - {fileID: 21300000, guid: e778adbd691844f13b686649d34c8752, type: 3}
+  - {fileID: 21300000, guid: 29dc1ebda5bbe4a2da682ac01d14c7e0, type: 3}
+  - {fileID: 21300000, guid: 4ed2addd86a404e09909327ad26c81fc, type: 3}
+  - {fileID: 21300000, guid: 3c9ba73e9910e441e99ba3ea3447a333, type: 3}
+  - {fileID: 21300000, guid: 44d2888e3df4748b499b38b61970faa3, type: 3}
+  - {fileID: 21300000, guid: 782fab8e177b74c8fa1813581399a892, type: 3}
+  - {fileID: 21300000, guid: 92ae6dae2591a40318b1394ac8385766, type: 3}
+  - {fileID: 21300000, guid: 661f5c0fe528a4056973b27158d685e8, type: 3}
+  - {fileID: 21300000, guid: 85d24f0f5eae44b1589331f3af2808a3, type: 3}
+  - {fileID: 21300000, guid: 53f8581f393a24f8fa64ea8704ba2e0b, type: 3}
+  - {fileID: 21300000, guid: 7fa32e1f66c924630bfc32117fe53c7f, type: 3}
+  - {fileID: 21300000, guid: 10873a2f4dc3a4ef3a37b4f048d525a3, type: 3}
+  - {fileID: 21300000, guid: e0b89b7f3018140cc8d4512a9242d142, type: 3}
+  - {fileID: 21300000, guid: 25c38e8fff88e4a3193f2b5d3705db38, type: 3}
+  - {fileID: 21300000, guid: 51028c9f34be445868e9251d50a6b1dc, type: 3}
+  - {fileID: 21300000, guid: b12baf9fad9d8415baf1395873c5d570, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Concave - 100ppu
+  - Square - Stroke 2px
+  - Straight - 100ppu
+  - Rounded - 300ppu
+  - Polygon Top  Point- Stroke 2px - 100ppu
+  - Circle - 64
+  - Semi Rounded - Blurry - 300ppu
+  - Semi Rounded - Outline - 10px - 500ppu
+  - Straight - Stroke 2px - 200ppu
+  - Rounded - 160ppu
+  - Circle Stroke - 20px
+  - Pointed - 100ppu
+  - Semi Rounded - 800ppu
+  - Straight - Stroke 4px - 500ppu
+  - Semi Rounded - 500ppu
+  - Straight - Stroke 1px - 100ppu
+  - Square
+  - Concave - Stroke 2px - 200ppu
+  - Rounded - 250ppu
+  - Cutout - 500ppu
+  - Straight - 200ppu
+  - Polygon Top  Point- Stroke 1px - 100ppu
+  - Straight - 150ppu
+  - Straight - Stroke 2px - 100ppu
+  - Cutout - Stroke 2px - 200ppu
+  - Rounded - 100ppu
+  - Semi Rounded - 450ppu
+  - Square - Stroke 5px
+  - Straight - 500ppu
+  - Circle Stroke - 4px
+  - Rounded - Stroke 1,5px - 100ppu
+  - Rounded - Stroke 4,5px - 300ppu
+  - Polygon - Stroke 10px - 100ppu
+  - Circle - 256
+  - Cutout - 200ppu
+  - Diamond
+  - Rounded - 400ppu
+  - Semi Rounded - Outline - 4px - 200ppu
+  - Pointed - Stroke 1px - 100ppu
+  - Rounded - 130ppu
+  - Pointed - 400ppu
+  - Circle Stroke - 2px
+  - Polygon - Filled
+  - Straight - 400ppu
+  - Semi Rounded - Outline - 2px - 100ppu
+  - Cutout - Stroke 1px - 100ppu
+  - Circle Stroke - 6px
+  - Polygon - Stroke 2px - 100ppu
+  - Polygon Top Point - Filled
+  - Concave - Stroke 2px - 100ppu
+  - Straight - Stroke 3px - 400ppu
+  - Rounded - Stroke 4px - 250ppu
+  - Rounded - Stroke 3px - 200ppu
+  - Semi Rounded - Outline - 12px - 600ppu
+  - Polygon - Stroke 1px - 100ppu
+  - Semi Rounded - Outline - 6px - 300ppu
+  - Concave - Stroke 4px - 500ppu
+  - Pointed - 80ppu
+  - Rounded - Stroke 7,5px - 400ppu
+  - Straight - Stroke 12px - 300ppu
+  - Semi Rounded - 100ppu
+  - Pointed - Stroke 4px - 200ppu
+  - Semi Rounded - Outline - 14px - 800ppu
+  - Diamond - Stroke 1px
+  - Pointed - Stroke 8px - 400ppu
+  - Rounded - Stroke 6px - 400ppu
+  - Pointed - Stroke 2px - 200ppu
+  - Circle - 1024
+  - Semi Rounded - 200ppu
+  - Pointed - Stroke 1px - 80ppu
+  - Circle Stroke - 10px
+  - Concave - 500ppu
+  - Semi Rounded - 600ppu
+  - Cutout - 100ppu
+  - Straight - Stroke 1,5px - 150ppu
+  - Circle - 128
+  - Semi Rounded - 400ppu
+  - Circle - 512
+  - Semi Rounded - 300ppu
+  - Cutout - Stroke 2px - 100ppu
+  - Concave - Stroke 4px - 200ppu
+  - Rounded - 200ppu
+  - Square - Stroke 3px
+  - Square - Stroke 4px
+  - Polygon Top  Point- Stroke 10px - 100ppu
+  - Cutout - Stroke 4px - 500ppu
+  - Circle Stroke - 15px
+  - Cutout - Stroke 2x - 100ppu
+  - Square - Stroke 1px
+  - Pointed - 200ppu
+  - Semi Rounded - Outline - 8px - 400ppu
+  - Concave - Stroke 1px - 100ppu
+  - Straight - Stroke 4px - 200ppu
+  - Concave - 200ppu
+  m_RenderDataMap: {}
+  m_Tag: UI_Shape
+  m_IsVariant: 0
