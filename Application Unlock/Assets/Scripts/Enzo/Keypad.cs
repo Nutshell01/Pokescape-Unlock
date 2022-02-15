@@ -11,6 +11,7 @@ public class Keypad : MonoBehaviour
     [SerializeField] float _textSpacing4digits;
     [SerializeField] float _textSpacing2digits;
     [SerializeField] TextMeshProUGUI _screenText;
+    [SerializeField] SpawnIndice _spawnIndice;
     private int _outputValue;
 
 
@@ -45,6 +46,7 @@ public class Keypad : MonoBehaviour
         {
             case "V":
                 int.TryParse(_input, out _outputValue);
+                _spawnIndice.ChangeIndice();
                 break;
 
             case "C":
