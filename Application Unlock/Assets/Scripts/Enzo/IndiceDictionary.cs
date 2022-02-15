@@ -7,8 +7,8 @@ public class IndiceDictionary : MonoBehaviour
     public Dictionary<int, IndiceValue> _indices = new Dictionary<int, IndiceValue>();
 
     #region Dictionnary
-    IndiceValue indice01 = new IndiceValue("01", "ceci est un indice", "la réponse est 01");
-    IndiceValue indice02 = new IndiceValue("02", "ceci est un aussi indice", "la réponse est 02");
+    IndiceValue indice01 = new IndiceValue("01", "Ceci est un indice", "la réponse est 01", true);
+    IndiceValue indice02 = new IndiceValue("02", "Rien à signaler", null, false);
     #endregion
 
     private void Start()
