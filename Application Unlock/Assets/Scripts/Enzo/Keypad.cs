@@ -12,6 +12,7 @@ public class Keypad : MonoBehaviour
     [SerializeField] float _textSpacing2digits;
     [SerializeField] TextMeshProUGUI _screenText;
     [SerializeField] SpawnIndice _spawnIndice;
+    [SerializeField] GameObject _clavierCanvas;
     private int _outputValue;
 
 
@@ -45,8 +46,14 @@ public class Keypad : MonoBehaviour
         switch (valueEntered)
         {
             case "V":
+
                 int.TryParse(_input, out _outputValue);
-                _spawnIndice.ChangeIndice();
+                _spawnIndice.SpawnFirstIndice();
+                _input = "";
+                _buttonPressed = 0;
+                _screenText.text = _input.ToString();
+                _clavierCanvas.SetActive(false);
+
                 break;
 
             case "C":
