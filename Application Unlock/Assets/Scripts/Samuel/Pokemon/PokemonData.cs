@@ -3,30 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public enum TypeOfPokemon
-{
-    Fire,
-    Normal,
-    Poison,
-    Psychic,
-    Grass,
-    Ground,
-    Ice,
-    Rock,
-    Dragon,
-    Water,
-    Bug,
-    Dark,
-    Fighting,
-    Ghost,
-    Steel,
-    Flying,
-    Electric,
-    Fairy
-}
-
 [Serializable]
-public class Pokemon
+[CreateAssetMenu(fileName ="PokemonData", menuName ="ScriptableObject/PokemonData")]
+public class PokemonData : ScriptableObject
 {
     [SerializeField] protected bool IsInTeam;
 
@@ -36,9 +15,12 @@ public class Pokemon
 
     [SerializeField] protected string InfoPokemon;
 
-    [SerializeField] protected TypeOfPokemon[] ArrayTypeOfPokemons = new TypeOfPokemon[2];
+    [SerializeField] protected TypePokemon[] ArrayTypeOfPokemons = new TypePokemon[2];
 
     [SerializeField] protected Sprite IconPokemon;
+    [SerializeField] protected SkillPokemon[] SkillPokemons = new SkillPokemon[4];
 
+    public TypePokemon[] arrayTypeOfPokemons => ArrayTypeOfPokemons;
+    public string namePokemon => NamePokemon;
     public Sprite sprite { get { return IconPokemon; } set { IconPokemon = value; } }
 }

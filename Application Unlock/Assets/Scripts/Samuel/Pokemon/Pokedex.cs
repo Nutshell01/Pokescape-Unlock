@@ -5,11 +5,11 @@ using UnityEngine.Events;
 
 public class Pokedex : MonoBehaviour
 {
-    [SerializeField] private List<Pokemon> PokemonsInThePokedex = new List<Pokemon>();
+    [SerializeField] private List<PokemonData> PokemonsInThePokedex = new List<PokemonData>();
     [SerializeField] private PokemonTeam pokemonTeam;
 
     private int test;
-    private void ChangeBoolInTeam(Pokemon pokemon)
+    private void ChangeBoolInTeam(PokemonData pokemon)
     {
         pokemon.isInTeam = true;
         pokemonTeam.pokemonsInTeam.Add(pokemon);
