@@ -958,6 +958,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46708c8048ccd7d498bac05d1daa390e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _indiceObjectArray:
+  - {fileID: 11400000, guid: e2170ab3e560e394a904cee60e5698e8, type: 2}
+  - {fileID: 11400000, guid: 3da103e3353bfa7419ed4c1d6c52f1a1, type: 2}
+  - {fileID: 11400000, guid: 1629a49608eeab842819ebee450dfe78, type: 2}
+  _defaultValue: {fileID: 11400000, guid: 9f894b0877089464c85f9099027fbf80, type: 2}
 --- !u!114 &7677177500265769266
 MonoBehaviour:
   m_ObjectHideFlags: 0

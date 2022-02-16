@@ -15,16 +15,14 @@ public class SpawnIndice : MonoBehaviour
     public void SpawnFirstIndice()
     {
         _indiceToSpawn = _keycodeScript.GetOutputValue();
-        _currentIndiceNumber.text = "Indice n°" + _dictionnaryScript.GetIndiceValue(_indiceToSpawn)._indiceNumber;
-        _currentText.text = _dictionnaryScript.GetIndiceValue(_indiceToSpawn)._firstIndice;
-        if( _dictionnaryScript.GetIndiceValue(_indiceToSpawn)._usefulness == true)
-        {
-            _IndiceButton.SetActive(true);
-        }
-        else
-        {
-            _IndiceButton.SetActive(false);
-        }
+        IndiceValue _valueToSpawn = _dictionnaryScript.GetIndiceValue(_indiceToSpawn);
+
+        _currentIndiceNumber.text = "Indice n°" + _indiceToSpawn.ToString();
+
+        _currentText.text = _valueToSpawn._firstIndice;
+
+        _IndiceButton.SetActive(_valueToSpawn._usefulness);
+
        
     }
     public void SpawnSecondIndice()
