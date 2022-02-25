@@ -11,9 +11,10 @@ public class LogInterfacePokemon : MonoBehaviour
     [SerializeField] private Image Type2;
     [SerializeField] private TextMeshProUGUI tmpro;
 
-    private PokemonData CurrentPokemon;
+   [SerializeField] private PokemonData CurrentPokemon;
 
     public PokemonData currentPokemon => CurrentPokemon;
+
     private bool HaveAPokemon;
 
     public bool haveAPokemon => HaveAPokemon;

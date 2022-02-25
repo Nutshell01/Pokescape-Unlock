@@ -8,4 +8,6 @@ public class SkillPokemon
 {
     [SerializeField] private string NameOfSkill;
     [SerializeField] private Sprite IconeOfSkill;
+
+    public string nameOfSkill => NameOfSkill;
 }
