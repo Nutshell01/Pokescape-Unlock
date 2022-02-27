@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d5b49cc8534466b449ae553eb03507c3, type: 3}
-  m_Name: Indice 02
+  m_Name: Indice 89
   m_EditorClassIdentifier: 
-  _indiceNumber: 2
-  _firstIndice: Vous devriez partir en voyage avec cet oeuf, qui sait ce qu'il pourrais
-    en sortir
-  _secondIndice: "Marchez 100 pas pour faire \xE9clore l'oeuf"
+  _indiceNumber: 89
+  _firstIndice: "Cette partition ne poss\xE8de que 3 notes, R\xE9, Fa et Sol"
+  _secondIndice: "La suite de note est R\xE9, Fa, Sol, R\xE9, R\xE9, Fa, Sol, Sol,
+    Sol, Fa"
   _usefulness: 1

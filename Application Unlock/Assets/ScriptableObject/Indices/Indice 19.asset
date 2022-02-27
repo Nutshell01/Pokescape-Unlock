@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d5b49cc8534466b449ae553eb03507c3, type: 3}
-  m_Name: Indice 02
+  m_Name: Indice 19
   m_EditorClassIdentifier: 
-  _indiceNumber: 2
-  _firstIndice: Vous devriez partir en voyage avec cet oeuf, qui sait ce qu'il pourrais
-    en sortir
-  _secondIndice: "Marchez 100 pas pour faire \xE9clore l'oeuf"
+  _indiceNumber: 19
+  _firstIndice: "Essayez de capturer ce pok\xE9mon."
+  _secondIndice: "Ce Pok\xE9mon poss\xE8de des capacit\xE9s qui peuvent \xEAtre utilis\xE9es
+    contre d'autres Pok\xE9mons ou des objets.\r\n"
   _usefulness: 1

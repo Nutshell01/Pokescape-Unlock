@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d5b49cc8534466b449ae553eb03507c3, type: 3}
-  m_Name: Indice 02
+  m_Name: Indice 77
   m_EditorClassIdentifier: 
-  _indiceNumber: 2
-  _firstIndice: Vous devriez partir en voyage avec cet oeuf, qui sait ce qu'il pourrais
-    en sortir
-  _secondIndice: "Marchez 100 pas pour faire \xE9clore l'oeuf"
+  _indiceNumber: 77
+  _firstIndice: "La latitude correspond a un chiffre rouge et la longitude \xE0 un
+    chiffre noir."
+  _secondIndice: "Le chiffre rouge est donn\xE9 par Mr.Mime et le chiffre noir est
+    donn\xE9 par le papier crach\xE9 par Rongourmand, ce qui donne le code 3556.\n"
   _usefulness: 1

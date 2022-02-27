@@ -8,8 +8,8 @@ using UnityEngine;
 public class IndiceValue : ScriptableObject
 {
     public int _indiceNumber;
-    public string _firstIndice;
-    public string _secondIndice;
+    [TextArea(3, 5)]public string _firstIndice;
+     [TextArea(3, 5)]public string _secondIndice;
     public bool _usefulness;
     
     // public IndiceValue(string newIndiceNumber, string newFirstIndice, string newSecondIndice, bool isUseful)
