@@ -5,9 +5,10 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] private Timer timer = null;
+    [SerializeField] private TimerCountDown timerCountDown = null;
+ 
 
-    [Header("Button")]
+    [Header("Buttons")]
 
     public Button Play;
     public Button Mistake;
@@ -17,18 +18,39 @@ public class MainMenu : MonoBehaviour
     public Button RevoirIndice;
     public Button Team;
 
+    public bool Pause = false;
+
+
     public void StartGame()
     {
-        Mistake.enabled = true;
-        Indice.enabled = true;
-        Machine.enabled = true;
-        Pokedex.enabled = true;
-        RevoirIndice.enabled = true;
-        Team.enabled = true;
+        if(Pause == true)
+        {
+            Mistake.enabled = true;
+            Indice.enabled = true;
+            Machine.enabled = true;
+            Pokedex.enabled = true;
+            RevoirIndice.enabled = true;
+            Team.enabled = true;
+            timerCountDown.enabled = true;
 
-        timer.TimerCountDown();
+            Pause = false;
+        }
+
+        else if(Pause == false)
+        {
+            Mistake.enabled = false;
+            Indice.enabled = false;
+            Machine.enabled = false;
+            Pokedex.enabled = false;
+            RevoirIndice.enabled = false;
+            Team.enabled = false;
+
+            
+            Pause = true;
+        }
     }
-    
+ 
+
     public void OnMistakeClick()
     {
 

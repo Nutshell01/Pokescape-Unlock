@@ -134,9 +134,8 @@ GameObject:
   - component: {fileID: 205159366}
   - component: {fileID: 205159368}
   - component: {fileID: 205159367}
-  - component: {fileID: 205159369}
   m_Layer: 5
-  m_Name: Timer
+  m_Name: TimerText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -149,16 +148,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205159365}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1857263209}
-  m_RootOrder: 7
+  m_Father: {fileID: 289846366}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000019073, y: 405}
+  m_AnchoredPosition: {x: 0, y: 405}
   m_SizeDelta: {x: 583.464, y: 158.067}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &205159367
@@ -181,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 60:00
+  m_text: '60 : 00'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -258,19 +257,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205159365}
   m_CullTransparentMesh: 1
---- !u!114 &205159369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 205159365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3043884d8f38fbe4d8d4f7a72fd64746, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TimerValue: 60
 --- !u!1 &271644556
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,6 +378,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271644556}
   m_CullTransparentMesh: 1
+--- !u!1 &289846365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 289846366}
+  - component: {fileID: 289846367}
+  m_Layer: 5
+  m_Name: Timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &289846366
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289846365}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 205159366}
+  m_Father: {fileID: 1857263209}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &289846367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289846365}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e7e1e96d272ec045a9c3662ab1c58b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Text: {fileID: 205159367}
+  mainMenu: {fileID: 1857263210}
+  Duration: 3600
 --- !u!1 &314796762
 GameObject:
   m_ObjectHideFlags: 0
@@ -2222,7 +2260,7 @@ RectTransform:
   - {fileID: 1302477942}
   - {fileID: 1433683249}
   - {fileID: 729272415}
-  - {fileID: 205159366}
+  - {fileID: 289846366}
   m_Father: {fileID: 1453920246}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2243,7 +2281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c49027bc2d966b94ca701448ef73b8ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: {fileID: 205159369}
+  timerCountDown: {fileID: 289846367}
   Play: {fileID: 2115688034}
   Mistake: {fileID: 797265421}
   Indice: {fileID: 271644558}
@@ -2251,6 +2289,7 @@ MonoBehaviour:
   Pokedex: {fileID: 1302477943}
   RevoirIndice: {fileID: 1433683250}
   Team: {fileID: 729272416}
+  Pause: 1
 --- !u!1 &2017801205
 GameObject:
   m_ObjectHideFlags: 0
