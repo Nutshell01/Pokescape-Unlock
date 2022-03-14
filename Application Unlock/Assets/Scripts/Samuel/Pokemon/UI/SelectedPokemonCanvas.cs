@@ -17,7 +17,5 @@ public class SelectedPokemonCanvas : MonoBehaviour
         {
             CompetencesPokemonsName[i].text = pokemonData.skillPokemons[i].nameOfSkill;
         }
-        
-        Debug.Log(CurrentPokemonData.namePokemon);
     }
 }

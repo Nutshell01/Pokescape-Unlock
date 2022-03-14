@@ -23,10 +23,8 @@ MonoBehaviour:
   IconPokemon: {fileID: -3463732287345018557, guid: 53e7056c098425546a48a3eac3db43d3, type: 3}
   SkillPokemons:
   - NameOfSkill: Explosion
-    IconeOfSkill: {fileID: 0}
+    IconeOfSkill: {fileID: -3299429474701110686, guid: 54e07ae61c8cb5746ae6899606b0f9c5, type: 3}
   - NameOfSkill: Panda Vroom
-    IconeOfSkill: {fileID: 0}
-  - NameOfSkill: Debile
-    IconeOfSkill: {fileID: 0}
+    IconeOfSkill: {fileID: 9016082972496168736, guid: 1585cfd6a5c65fb46a323e4475b87994, type: 3}
   - NameOfSkill: ZA WORLDOOO
-    IconeOfSkill: {fileID: 0}
+    IconeOfSkill: {fileID: -5432005676007710954, guid: 53b96bce5d08abc48a1b4059c9b1088d, type: 3}
