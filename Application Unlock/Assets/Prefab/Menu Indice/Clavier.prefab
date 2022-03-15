@@ -1902,6 +1902,8 @@ GameObject:
   - component: {fileID: 7677177499913212935}
   - component: {fileID: 7677177499913212954}
   - component: {fileID: 2707542318556671561}
+  - component: {fileID: 7677177500265769261}
+  - component: {fileID: 7677177500265769266}
   m_Layer: 5
   m_Name: Clavier
   m_TagString: Untagged
@@ -2010,6 +2012,8 @@ MonoBehaviour:
   _textSpacing4digits: 50
   _textSpacing2digits: 100
   _screenText: {fileID: 7677177500900157679}
+  _spawnIndice: {fileID: 0}
+  _clavierCanvas: {fileID: 7677177499913212929}
 --- !u!223 &2707542318556671561
 Canvas:
   m_ObjectHideFlags: 0
@@ -2027,10 +2031,96 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &7677177500265769261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7677177499913212929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46708c8048ccd7d498bac05d1daa390e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _indiceObjectArray:
+  - {fileID: 11400000, guid: c41ba179f9590964eac8e7a624ed8578, type: 2}
+  - {fileID: 11400000, guid: 17d59d86711ef75489e2289110d2430b, type: 2}
+  - {fileID: 11400000, guid: 6ef11a1a4fb4a724eba01c350cef3f89, type: 2}
+  - {fileID: 11400000, guid: 6e3147a7635f7e94ab808e9a2bf1a72f, type: 2}
+  - {fileID: 11400000, guid: f2912c072b3ebf3409c54ea022b03bfd, type: 2}
+  - {fileID: 11400000, guid: 0e6fbbc0767c1154a801ab56eb083af8, type: 2}
+  - {fileID: 11400000, guid: fef734fe0e96e954ba6e7346a14cfad7, type: 2}
+  - {fileID: 11400000, guid: dc2d62fc1816ff549b4bdbf8732d1def, type: 2}
+  - {fileID: 11400000, guid: a9e601ddeb75f9849aedaed59d74f180, type: 2}
+  - {fileID: 11400000, guid: 83fab037ee4c7074eb6f2bc1d4f4076b, type: 2}
+  - {fileID: 11400000, guid: 3e78b7c7a6ef5ea45bde91f25e1e85da, type: 2}
+  - {fileID: 11400000, guid: 5efa76fe1e2cdbc4388c03cc537b1574, type: 2}
+  - {fileID: 11400000, guid: 7677151470ec1304ab45826ef1fbb814, type: 2}
+  - {fileID: 11400000, guid: 510365582e7c7054fbe5776664811126, type: 2}
+  - {fileID: 11400000, guid: 7243e8e50f6f53547a76965b1a4c3cd7, type: 2}
+  - {fileID: 11400000, guid: 451bdf8c00b6b9a4e94df6ddda777ab8, type: 2}
+  - {fileID: 11400000, guid: 1cc0611446b7a6d42b5eaecc6c39c1f8, type: 2}
+  - {fileID: 11400000, guid: 3bd3c94b2bd3dbe45919e9ebc6602024, type: 2}
+  - {fileID: 11400000, guid: 968464634d1755e4e8e2fa258ad23004, type: 2}
+  - {fileID: 11400000, guid: 23157b36d7eec2f42aea62ef55192e6b, type: 2}
+  - {fileID: 11400000, guid: d929111186b689a4da77349fd867d6db, type: 2}
+  - {fileID: 11400000, guid: 4209d59d74afbd34283235935df66504, type: 2}
+  - {fileID: 11400000, guid: 54a2547ecf531044dbed3f5f6c01e5ab, type: 2}
+  - {fileID: 11400000, guid: e82b256b566410b418ecad16c4a46526, type: 2}
+  - {fileID: 11400000, guid: ac707d751e5168041a3d4b10d31211f0, type: 2}
+  - {fileID: 11400000, guid: 551547fbc6d51534d901fd5df685fb22, type: 2}
+  - {fileID: 11400000, guid: 5d12dc4ca01aa284dbcfad51c7e4804d, type: 2}
+  - {fileID: 11400000, guid: 900e1ceb53440f34d98de3e82df61eaa, type: 2}
+  - {fileID: 11400000, guid: 16809073593183941b0b41fe988bd3c9, type: 2}
+  - {fileID: 11400000, guid: b8c31390e08980f4baaa8352592064da, type: 2}
+  - {fileID: 11400000, guid: 04eb168cbaf7bf24c9be191f4c57217f, type: 2}
+  - {fileID: 11400000, guid: 97667421c49a37e4aa10e56ae2eb6318, type: 2}
+  - {fileID: 11400000, guid: 3473518c058cdbd4dad3dbb409d8811e, type: 2}
+  - {fileID: 11400000, guid: 4e8dae6edd0166845b769f30b6e6adf8, type: 2}
+  - {fileID: 11400000, guid: cb4d7456231de8d49bb8df5d09a398a1, type: 2}
+  - {fileID: 11400000, guid: 45c5926c4b48c83409f2e3747a297414, type: 2}
+  - {fileID: 11400000, guid: 67237eb363a322147961b398b131ad34, type: 2}
+  - {fileID: 11400000, guid: f5f10bf5946f1a449b071f132e2e6ba2, type: 2}
+  - {fileID: 11400000, guid: 5702d26ee42385c45b9ee11cb14bceaa, type: 2}
+  - {fileID: 11400000, guid: 3a0cf6ff27f6a974983ceaccc63ad300, type: 2}
+  - {fileID: 11400000, guid: 52f40828ac5e8a6419bfd293482af80b, type: 2}
+  - {fileID: 11400000, guid: bc48af37fde531d459d66a1c38b505fb, type: 2}
+  - {fileID: 11400000, guid: 288e5b3629c90f547bdd57a0a0485f46, type: 2}
+  - {fileID: 11400000, guid: 5052afcd70519114bb231d06ff4744a2, type: 2}
+  - {fileID: 11400000, guid: 0b4b848b97264134299de3b574ba225b, type: 2}
+  - {fileID: 11400000, guid: 66905ecf3b090574a88eccc03eaa6d9c, type: 2}
+  - {fileID: 11400000, guid: db4677aeafd80ff46aa6c309fa105197, type: 2}
+  - {fileID: 11400000, guid: 29df11f3defb40d47821f6412b9dbc5d, type: 2}
+  - {fileID: 11400000, guid: 3ce81af7db4137741a0a6eda11344ba9, type: 2}
+  - {fileID: 11400000, guid: 9bfe283feaf2038499dfe6ef9f984852, type: 2}
+  - {fileID: 11400000, guid: 5d1d5107f4949cf44a741d3e36a7b3ac, type: 2}
+  - {fileID: 11400000, guid: 4544ee6f881c2504789b0e28cfbceea2, type: 2}
+  - {fileID: 11400000, guid: 3c6c596c8bcc70444bff0004dc95bae6, type: 2}
+  - {fileID: 11400000, guid: ff0b49db83e6eda4882ce9f8e20f4828, type: 2}
+  - {fileID: 11400000, guid: 67cd7e878cc65d24595e69de8ca8f30f, type: 2}
+  _defaultValue: {fileID: 11400000, guid: 9f894b0877089464c85f9099027fbf80, type: 2}
+--- !u!114 &7677177500265769266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7677177499913212929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &7677177499991019793
 GameObject:
   m_ObjectHideFlags: 0
