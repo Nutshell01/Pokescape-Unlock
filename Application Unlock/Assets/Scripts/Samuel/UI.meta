@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: b1ff9589a98829a4ba4ee53d52bb6b2a
+<<<<<<< HEAD:Application Unlock/Assets/Scripts/Samuel/UI.meta
+guid: ca9c8ba5e34bc144fa589e31a9a3375d
+=======
+guid: d3af4327b38c2764ca2f7853334819fa
+>>>>>>> Lorie:Application Unlock/Assets/Scenes/Final.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
