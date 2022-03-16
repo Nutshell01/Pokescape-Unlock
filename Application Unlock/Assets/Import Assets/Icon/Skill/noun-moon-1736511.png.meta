@@ -1,0 +1,282 @@
+fileFormatVersion: 2
+guid: 1585cfd6a5c65fb46a323e4475b87994
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3134677615437033050
+    second: noun-moon-1736511_0
+  - first:
+      213: -1255935256525169385
+    second: noun-moon-1736511_1
+  - first:
+      213: 7434546636561327452
+    second: noun-moon-1736511_2
+  - first:
+      213: -6044796191267991237
+    second: noun-moon-1736511_3
+  - first:
+      213: 8517573555210469880
+    second: noun-moon-1736511_4
+  - first:
+      213: -1336979616341468188
+    second: noun-moon-1736511_5
+  - first:
+      213: 4107148062331788197
+    second: noun-moon-1736511_6
+  - first:
+      213: -5181640024525247240
+    second: noun-moon-1736511_7
+  - first:
+      213: 8149012784371864938
+    second: noun-moon-1736511_8
+  - first:
+      213: -1590870092192153793
+    second: noun-moon-1736511_9
+  - first:
+      213: 7773207224395583129
+    second: noun-moon-1736511_10
+  - first:
+      213: 5057228446451051128
+    second: noun-moon-1736511_11
+  - first:
+      213: 3052887045522238106
+    second: noun-moon-1736511_12
+  - first:
+      213: 1812942947224076154
+    second: noun-moon-1736511_13
+  - first:
+      213: 1658207492112900112
+    second: noun-moon-1736511_14
+  - first:
+      213: 7996293687189337277
+    second: noun-moon-1736511_15
+  - first:
+      213: -5766343642613727619
+    second: noun-moon-1736511_16
+  - first:
+      213: 7077513886176683267
+    second: noun-moon-1736511_17
+  - first:
+      213: 2554986252224929494
+    second: noun-moon-1736511_18
+  - first:
+      213: -378499468162503240
+    second: noun-moon-1736511_19
+  - first:
+      213: -1513299053902762920
+    second: noun-moon-1736511_20
+  - first:
+      213: 6903557801176929913
+    second: noun-moon-1736511_21
+  - first:
+      213: 4054849825927061404
+    second: noun-moon-1736511_22
+  - first:
+      213: -1337356348460576055
+    second: noun-moon-1736511_23
+  - first:
+      213: 7975347267310691181
+    second: noun-moon-1736511_24
+  - first:
+      213: 6217958321131760531
+    second: noun-moon-1736511_25
+  - first:
+      213: -4957778276378655744
+    second: noun-moon-1736511_26
+  - first:
+      213: -201887124945277918
+    second: noun-moon-1736511_27
+  - first:
+      213: -4374994754232434623
+    second: noun-moon-1736511_28
+  - first:
+      213: 6597269375874328048
+    second: noun-moon-1736511_29
+  - first:
+      213: -7657850429665092669
+    second: noun-moon-1736511_30
+  - first:
+      213: -5673090311347620203
+    second: noun-moon-1736511_31
+  - first:
+      213: -4547133097212696579
+    second: noun-moon-1736511_32
+  - first:
+      213: -361837882933451958
+    second: noun-moon-1736511_33
+  - first:
+      213: -6760775711605510410
+    second: noun-moon-1736511_34
+  - first:
+      213: -5935083945873031552
+    second: noun-moon-1736511_35
+  - first:
+      213: -434829813576755756
+    second: noun-moon-1736511_36
+  - first:
+      213: -6068467947346411421
+    second: noun-moon-1736511_37
+  - first:
+      213: -1402640118149171697
+    second: noun-moon-1736511_38
+  - first:
+      213: -7376316724164039481
+    second: noun-moon-1736511_39
+  - first:
+      213: -411796366546872718
+    second: noun-moon-1736511_40
+  - first:
+      213: 24189304386518898
+    second: noun-moon-1736511_41
+  - first:
+      213: -1061155167033756046
+    second: noun-moon-1736511_42
+  - first:
+      213: 9016082972496168736
+    second: noun-moon-1736511_43
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: noun-moon-1736511_0
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 179
+        width: 482
+        height: 482
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a1d18621536f74d0800000000000000
+      internalID: -3134677615437033050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noun-moon-1736511_43
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 179
+        width: 254
+        height: 482
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0270519b1bf8f1d70800000000000000
+      internalID: 9016082972496168736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
