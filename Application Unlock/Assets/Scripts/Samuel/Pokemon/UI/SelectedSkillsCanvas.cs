@@ -10,10 +10,12 @@ public class SelectedSkillsCanvas : MonoBehaviour
 
     [SerializeField] private Image IconeSkill;
     [SerializeField] private TextMeshProUGUI NameSkillSelected;
+    [SerializeField] private ButtonCheckNumber buttonCheckNumber;
     public void ComputeCanvas(SkillPokemon skillPokemon)
     {
         CurrentSkill = skillPokemon;
         NameSkillSelected.text = CurrentSkill.nameOfSkill;
         IconeSkill.sprite = CurrentSkill.iconeOfSkill;
+        buttonCheckNumber.currentSkill = CurrentSkill;
     }
 }
