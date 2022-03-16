@@ -2,13 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 public class GetCardSliderValue : MonoBehaviour
 {
     [SerializeField] Slider _longitudeSlider;
     [SerializeField] Slider _latitudeSlider;
     [SerializeField] int _valueLongitude;
     [SerializeField] int _valueLatitude;
+
+    #region RéponseUI
+    [SerializeField] GameObject _answerBox;
+    [SerializeField] TextMeshProUGUI _answerText;
+    [SerializeField] string _wrongText;
+    [SerializeField] string _textToChange;
+    #endregion
     void Start()
     {
         
@@ -25,13 +32,15 @@ public class GetCardSliderValue : MonoBehaviour
     }
     public void Activate()
     {
+        _answerBox.SetActive(true);
+
         if(GetSliderValue(_longitudeSlider) == _valueLongitude && GetSliderValue(_latitudeSlider) == _valueLatitude)
         {
-            Debug.Log("la tu fait un truc quoi");
+           _answerText.text = _textToChange;
         }
         else
         {
-             Debug.Log("lqegifgueagbaezgae");
+            _answerText.text = _wrongText;
         }
     }
     
