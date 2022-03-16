@@ -9,9 +9,10 @@ public enum TypeOfButton
 }
 public class ClickOnButton : MonoBehaviour
 {
-    [SerializeField] private LogInterfacePokemon logInterfacePokemon;
-    [SerializeField] private GameObject CanvasPokemonInterface;
-    [SerializeField] private TypeOfButton CurrentTypeOfButton;
+    [SerializeField] private LogInterfacePokemon logInterfacePokemon = null;
+    [SerializeField] private SkillPokemonDataCanvas skillPokemonDataCanvas;
+    [SerializeField] private GameObject CanvasInterface = null;
+    [SerializeField] private TypeOfButton CurrentTypeOfButton = TypeOfButton.SelectedPokemon;
     private void Awake()
     {
         UnityEngine.UI.Button b = gameObject.GetComponent<UnityEngine.UI.Button>();
@@ -21,18 +22,19 @@ public class ClickOnButton : MonoBehaviour
         }
         else if(CurrentTypeOfButton == TypeOfButton.SelectedSkill)
         {
-        
+            b.onClick.AddListener(OpenSkillInterface);
+
         }
     }
     public void OpenPokemonInterface()
     {
-        Debug.Log(logInterfacePokemon.currentPokemon);
-        CanvasPokemonInterface.GetComponent<Canvas>().enabled = true;
-        CanvasPokemonInterface.GetComponent<SelectedPokemonCanvas>().ComputeCanvas(logInterfacePokemon.currentPokemon);
+        CanvasInterface.GetComponent<Canvas>().enabled = true;
+        CanvasInterface.GetComponent<SelectedPokemonCanvas>().ComputeCanvas(logInterfacePokemon.currentPokemon);
     }
 
     public void OpenSkillInterface()
     {
-
+        CanvasInterface.GetComponent<SelectedSkillsCanvas>().ComputeCanvas(skillPokemonDataCanvas.currentSkillPokemonCanvas);
+        CanvasInterface.GetComponent<Canvas>().enabled = true;
     }
 }
