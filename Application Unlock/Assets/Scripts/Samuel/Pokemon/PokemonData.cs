@@ -18,8 +18,10 @@ public class PokemonData : ScriptableObject
     [SerializeField] protected TypePokemon[] ArrayTypeOfPokemons = new TypePokemon[2];
 
     [SerializeField] protected Sprite IconPokemon;
+    [SerializeField] protected int NumberOfPokemon;
     [SerializeField] protected SkillPokemon[] SkillPokemons = new SkillPokemon[4];
 
+    public int numberOfPokemon => NumberOfPokemon;
     public SkillPokemon[] skillPokemons { get { return SkillPokemons; } set { SkillPokemons = value; } }
     public TypePokemon[] arrayTypeOfPokemons => ArrayTypeOfPokemons;
     public string namePokemon => NamePokemon;
