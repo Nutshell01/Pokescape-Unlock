@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using TMPro;
 
 public class AudioMic : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     AudioClip recording;
-    //Keep this one as a global variable (outside the functions) too and use GetComponent during start to save resources
     AudioSource audioSource;
     private float startRecordingTime;
+    public TextMeshProUGUI debug;
 
-    //Get the audiosource here to save resources
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -30,8 +30,17 @@ public class AudioMic : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         this.recording = recordingNew;
 
         //Play recording
-        audioSource.clip = recording;
-        audioSource.Play();
+        // audioSource.clip = recording;
+        // audioSource.Play();
+
+        if(recording != null)
+        {
+            debug.text = "clip not empty";
+        }
+        else
+        {
+            debug.text = "clip empty";
+        }
 
     }
 
