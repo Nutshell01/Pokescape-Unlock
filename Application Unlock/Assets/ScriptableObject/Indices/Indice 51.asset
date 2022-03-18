@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: Indice 51
   m_EditorClassIdentifier: 
   _indiceNumber: 51
-  _firstIndice: "Un de vos Pok\xE9mon doit pouvoir r\xE9cup\xE9rer ce que Taupiqueur
-    cache sans probl\xE8mes"
-  _secondIndice: "Demandez \xE0 Bagguiguane/Psytigri (selon le starter choisi)de
-    lancer l\u2019attaque Coup d\u2019Boule/Hypnose."
-  _usefulness: 1
+  _firstIndice: "Servez vous d\u2019une cl\xE9 ou de votre t\xEAte."
+  _secondIndice: 
+  _usefulness: 0

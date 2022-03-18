@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d5b49cc8534466b449ae553eb03507c3, type: 3}
-  m_Name: Indice 90
+  m_Name: Indice 05
   m_EditorClassIdentifier: 
-  _indiceNumber: 90
-  _firstIndice: Il a besoin de manger des baies.
-  _secondIndice: Combinez cette carte avec la carte 4.
+  _indiceNumber: 5
+  _firstIndice: 'Essayez de former un symbole '
+  _secondIndice: "Demandez \xE0 Bagguiguane/Psytigri (selon le starter choisi)de
+    lancer l\u2019attaque Tunnel/L\xE9vikin\xE9sie."
   _usefulness: 1
