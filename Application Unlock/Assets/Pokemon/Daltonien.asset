@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3e372f0cafeaf446b1651fa3ac41494, type: 3}
   m_Name: Daltonien
   m_EditorClassIdentifier: 
-  IsInTeam: 1
+  IsInTeam: 0
   NamePokemon: Daltonien
   InfoPokemon: Il voit genre comme une personne normal mais avec des differences
   ArrayTypeOfPokemons:
@@ -21,6 +21,7 @@ MonoBehaviour:
   - TypeIcone: {fileID: 4753904460685988725, guid: 6ca0c489a20bcd54092d6cc7fbd537dd, type: 3}
     typeOfPokemon: 2
   IconPokemon: {fileID: 1436729048224872836, guid: 53e7056c098425546a48a3eac3db43d3, type: 3}
+  NumberOfPokemon: 32
   SkillPokemons:
   - NameOfSkill: Vision X
     IconeOfSkill: {fileID: -5432005676007710954, guid: 53b96bce5d08abc48a1b4059c9b1088d, type: 3}

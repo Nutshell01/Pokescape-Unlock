@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3e372f0cafeaf446b1651fa3ac41494, type: 3}
   m_Name: Flambi
   m_EditorClassIdentifier: 
-  IsInTeam: 1
+  IsInTeam: 0
   NamePokemon: Flambi
   InfoPokemon: Il mange du Flan
   ArrayTypeOfPokemons:
@@ -21,6 +21,7 @@ MonoBehaviour:
   - TypeIcone: {fileID: -7238228040663250830, guid: 6ca0c489a20bcd54092d6cc7fbd537dd, type: 3}
     typeOfPokemon: 9
   IconPokemon: {fileID: -3463732287345018557, guid: 53e7056c098425546a48a3eac3db43d3, type: 3}
+  NumberOfPokemon: 45
   SkillPokemons:
   - NameOfSkill: Explosion
     IconeOfSkill: {fileID: -3299429474701110686, guid: 54e07ae61c8cb5746ae6899606b0f9c5, type: 3}
