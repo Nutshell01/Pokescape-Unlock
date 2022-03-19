@@ -13,10 +13,14 @@ public class AudioMicBlow : MonoBehaviour
     private const float THRESHOLD = 0.02f;  // Minimum amplitude to extract pitch (recieve anything)
     private const float ALPHA = 0.05f;      // The alpha for the low pass filter (I don't really understand this).
     
+    [Header("Mic Blow Value")]
     public TextMeshProUGUI blowDisplay;     // GUIText for displaying blow or not blow.
-    public int recordedLength = 50;    // How many previous frames of sound are analyzed.
+
+    [Tooltip("How many previous frames of sound are analyzed")]
+    public int recordedLength = 50;
+    [Tooltip ("How long a blow must last to be classified as a blow (and not a sigh for instance)")]
     public int requiedBlowTime = 4;    // How long a blow must last to be classified as a blow (and not a sigh for instance).
-    public int clamp = 160;            // Used to clamp dB (I don't really understand this either).
+    [HideInInspector] public int clamp = 160;            // Used to clamp dB (I don't really understand this either).
 
     private float rmsValue;            // Volume in RMS
     private float dbValue;             // Volume in DB
@@ -32,11 +36,14 @@ public class AudioMicBlow : MonoBehaviour
     private List<float> pitchValues;   // Used to average recent pitch.
     #endregion
 
-    [Space(20)]
+    [Space]
+    [Header("UI")]
     [SerializeField] private Image chargementFill;
+    [SerializeField] private float vitesseFill = 2;
     [SerializeField] private GameObject chargeBar; 
-    [SerializeField] private TextMeshProUGUI endMachine;
-    [SerializeField, TextArea(3, 5)] private string endPokeflute;
+    [SerializeField] private TextMeshProUGUI endMachineTMP;
+    [SerializeField, TextArea(3, 5)] private string endMessage;
+    
 
     AudioSource audioSource;
 
@@ -73,7 +80,7 @@ public class AudioMicBlow : MonoBehaviour
         if(chargementFill.fillAmount >= 1)
         {
             chargeBar.SetActive(false);
-            endMachine.text = endPokeflute;
+            endMachineTMP.text = endMessage;
         }
     }
 
@@ -176,7 +183,7 @@ public class AudioMicBlow : MonoBehaviour
         if (blowingTime > requiedBlowTime)
         {
             blowDisplay.text = "Blowing";
-            chargementFill.fillAmount += 0.1f * Time.deltaTime * 2; 
+            chargementFill.fillAmount += 0.1f * Time.deltaTime * vitesseFill; 
         }
         else
         {

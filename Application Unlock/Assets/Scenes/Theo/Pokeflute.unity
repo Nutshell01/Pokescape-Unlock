@@ -416,7 +416,7 @@ MonoBehaviour:
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 3
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1404,9 +1404,10 @@ MonoBehaviour:
   requiedBlowTime: 4
   clamp: 160
   chargementFill: {fileID: 666184789}
+  vitesseFill: 4
   chargeBar: {fileID: 2013734321}
-  endMachine: {fileID: 742786538}
-  endPokeflute: "Ronflex \xE0 d\xE9bloquer le passage prenez la carte XX"
+  endMachineTMP: {fileID: 742786538}
+  endMessage: "Ronflex \xE0 d\xE9bloquer le passage, prenez la carte XX"
 --- !u!82 &1805823393
 AudioSource:
   m_ObjectHideFlags: 0
