@@ -11,11 +11,11 @@ public class PermissionManager : MonoBehaviour
         if (resultMic == AndroidRuntimePermissions.Permission.Granted)
         {
             Debug.Log("We have permission to access the stepcounter");
-            Debug.LogError("PERMISSION GRANTED");
+            Debug.LogWarning("<b>PERMISSION GRANTED</b>");
         }
         else
         {
-            Debug.LogError("NO PERMISSION");
+            Debug.LogError("<b>NO PERMISSION</b>");
             Debug.Log("Permission state: " + resultMic); // No permission
         }
         #endregion
@@ -26,11 +26,11 @@ public class PermissionManager : MonoBehaviour
         if (resultSensor == AndroidRuntimePermissions.Permission.Granted)
         {
             Debug.Log("We have permission to access the stepcounter");
-            Debug.LogError("PERMISSION GRANTED");
+            Debug.LogWarning("<b>PERMISSION GRANTED</b>");
         }
         else
         {
-            Debug.LogError("NO PERMISSION");
+            Debug.LogError("<b>NO PERMISSION</b>");
             Debug.Log("Permission state: " + resultSensor); // No permission
         }
         #endregion

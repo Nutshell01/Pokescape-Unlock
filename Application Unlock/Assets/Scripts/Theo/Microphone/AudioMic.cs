@@ -33,14 +33,8 @@ public class AudioMic : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         // audioSource.clip = recording;
         // audioSource.Play();
 
-        if(recording != null)
-        {
-            debug.text = "clip not empty";
-        }
-        else
-        {
-            debug.text = "clip empty";
-        }
+        
+
 
     }
 
