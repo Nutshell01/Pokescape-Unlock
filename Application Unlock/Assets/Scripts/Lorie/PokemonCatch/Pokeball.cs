@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Pokeball : MonoBehaviour
 {
-    private bool dragging = false;
+    public bool dragging = false;
     private float distance;
     public float ThrowSpeed;
     public float ArchSpeed;
@@ -28,10 +28,11 @@ public class Pokeball : MonoBehaviour
     {
 
         if (dragging == true)
-        { 
+        {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             Vector3 rayPoint = ray.GetPoint(distance);
             transform.position = Vector3.Lerp(this.transform.position, rayPoint, Speed * Time.deltaTime);
         }
     }
+
 }
