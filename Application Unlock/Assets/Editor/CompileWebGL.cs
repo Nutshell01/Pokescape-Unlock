@@ -10,8 +10,8 @@ public static class BuildWebGL
         buildPlayerOptions.options = BuildOptions.None;
 
         buildPlayerOptions.scenes = new[] {
-            "Assets/Scenes/Samuel/Team",
-            "Assets/Scenes/Lorie/MainMenu",
+            "Assets/Scenes/Samuel/Team.unity",
+            "Assets/Scenes/Lorie/MainMenu.unity",
         };
 
         buildPlayerOptions.locationPathName = "Builds/WebGL/";
