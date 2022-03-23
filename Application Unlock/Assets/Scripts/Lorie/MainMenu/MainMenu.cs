@@ -15,7 +15,6 @@ public class MainMenu : MonoBehaviour
     public Button Indice;
     public Button Machine;
     public Button Pokedex;
-    public Button RevoirIndice;
     public Button Team;
 
     public bool Pause = false;
@@ -29,7 +28,6 @@ public class MainMenu : MonoBehaviour
             Indice.enabled = true;
             Machine.enabled = true;
             Pokedex.enabled = true;
-            RevoirIndice.enabled = true;
             Team.enabled = true;
             timerCountDown.enabled = true;
 
@@ -42,7 +40,6 @@ public class MainMenu : MonoBehaviour
             Indice.enabled = false;
             Machine.enabled = false;
             Pokedex.enabled = false;
-            RevoirIndice.enabled = false;
             Team.enabled = false;
 
             
