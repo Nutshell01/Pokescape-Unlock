@@ -9,7 +9,11 @@ public class MiaoussButton : MonoBehaviour
         First = 1,
         Second = 2,
         Third = 3,
-        Fourth = 4
+        Fourth = 4,
+        Fifth = 5,
+        Sixth = 6,
+        Seventh = 7,
+        Eighth = 8
     };
     private Position ButtonPosition;
     [SerializeField] Position _goodPos;
@@ -19,6 +23,7 @@ public class MiaoussButton : MonoBehaviour
 
     [SerializeField] Sprite[] sprites;
     [SerializeField] Image _spriteRenderer;
+    [SerializeField] int _maxCount;
 
 
     void Start()
@@ -44,32 +49,15 @@ public class MiaoussButton : MonoBehaviour
     public void ClickCount()
     {
         _count++;
-        if (_count > 4)
+        if (_count > _maxCount)
         {
             _count = 1;
         }
     }
     private void CheckWhichPos()
     {
-        if (_count == 1)
-        {
-            ButtonPosition = Position.First;
-            
-        }
-
-        if (_count == 2)
-        {
-            ButtonPosition = Position.Second;
-        }
-
-        if (_count == 3)
-        {
-            ButtonPosition = Position.Third;
-        }
-
-        if (_count == 4)
-        {
-            ButtonPosition = Position.Fourth;
-        }
+       int ToInt = (int)ButtonPosition;
+       ToInt = _count;
+       ButtonPosition = (Position)ToInt;
     }
 }
