@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3e372f0cafeaf446b1651fa3ac41494, type: 3}
   m_Name: PastaFazoule
   m_EditorClassIdentifier: 
-  IsInTeam: 0
+  IsInTeam: 1
   NamePokemon: PastaFazoule
   InfoPokemon: i am a fool
   ArrayTypeOfPokemons:
@@ -33,9 +33,5 @@ MonoBehaviour:
     NbOfNextCard: 0
   - NameOfSkill: i am
     IconeOfSkill: {fileID: 21300000, guid: ad25c8a7f05624d75b1ecee3dd619228, type: 3}
-    NbOfSucces: 0
-    NbOfNextCard: 0
-  - NameOfSkill: a fool
-    IconeOfSkill: {fileID: -4269676311810484347, guid: 53e7056c098425546a48a3eac3db43d3, type: 3}
     NbOfSucces: 0
     NbOfNextCard: 0
