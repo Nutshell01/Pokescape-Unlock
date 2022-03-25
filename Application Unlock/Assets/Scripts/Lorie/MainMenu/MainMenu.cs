@@ -15,7 +15,6 @@ public class MainMenu : MonoBehaviour
     public Button Mistake;
     public Button Indice;
     public Button Machine;
-    public Button Pokedex;
     public Button Team;
 
     public bool Pause = false;
@@ -23,6 +22,7 @@ public class MainMenu : MonoBehaviour
     public GameObject TeamCanvas;
     public GameObject ClavierIndices;
     public GameObject PokedexCanvas;
+    public GameObject CodeGroup;
 
     private void Start()
     {
@@ -37,7 +37,6 @@ public class MainMenu : MonoBehaviour
             Mistake.enabled = true;
             Indice.enabled = true;
             Machine.enabled = true;
-            Pokedex.enabled = true;
             Team.enabled = true;
             timerCountDown.enabled = true;
 
@@ -49,7 +48,6 @@ public class MainMenu : MonoBehaviour
             Mistake.enabled = false;
             Indice.enabled = false;
             Machine.enabled = false;
-            Pokedex.enabled = false;
             Team.enabled = false;
 
             
@@ -73,9 +71,9 @@ public class MainMenu : MonoBehaviour
 
     }
 
-    public void PokedexClick()
+    public void MachineClick()
     {
-        PokedexCanvas.SetActive(true);
+        CodeGroup.SetActive(true);
     }
 
    
