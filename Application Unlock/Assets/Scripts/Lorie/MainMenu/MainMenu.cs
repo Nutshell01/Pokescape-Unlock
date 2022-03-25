@@ -22,6 +22,7 @@ public class MainMenu : MonoBehaviour
 
     public GameObject TeamCanvas;
     public GameObject ClavierIndices;
+    public GameObject PokedexCanvas;
 
     private void Start()
     {
@@ -70,6 +71,11 @@ public class MainMenu : MonoBehaviour
     {
         //timerCountDown.
 
+    }
+
+    public void PokedexClick()
+    {
+        PokedexCanvas.SetActive(true);
     }
 
    
