@@ -490,6 +490,7 @@ MonoBehaviour:
   PokemonsInThePokedex:
   - {fileID: 11400000, guid: 00593b2a378b50841a312eb52a5c03ef, type: 2}
   - {fileID: 11400000, guid: 5e7957637b9804e43b93b1709844c28c, type: 2}
+  - {fileID: 11400000, guid: eba7b4b3245f3dc4c9873b23b8df0d76, type: 2}
   pokemonTeam: {fileID: 828027159}
 --- !u!4 &1945167653
 Transform:
