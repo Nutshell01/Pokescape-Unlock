@@ -69,7 +69,7 @@ public class MainMenu : MonoBehaviour
 
     public void MistakeClick()
     {
-        //timerCountDown.
+        //timerCountDown.Duration= -1;
 
     }
 
