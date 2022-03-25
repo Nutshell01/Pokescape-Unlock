@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-[Serializable]
 [CreateAssetMenu(fileName ="PokemonData", menuName ="ScriptableObject/PokemonData")]
 public class PokemonData : ScriptableObject
 {
@@ -19,7 +18,8 @@ public class PokemonData : ScriptableObject
 
     [SerializeField] protected Sprite IconPokemon;
     [SerializeField] protected int NumberOfPokemon;
-    [SerializeField] protected SkillPokemon[] SkillPokemons = new SkillPokemon[4];
+    [SerializeField] protected SkillPokemon[] SkillPokemons = new SkillPokemon[3];
+    [SerializeField] protected Dictionary<int, SkillPokemon> Oui = new Dictionary<int, SkillPokemon>();
 
     public int numberOfPokemon => NumberOfPokemon;
     public SkillPokemon[] skillPokemons { get { return SkillPokemons; } set { SkillPokemons = value; } }
