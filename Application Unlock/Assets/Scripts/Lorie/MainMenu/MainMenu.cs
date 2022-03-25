@@ -20,9 +20,17 @@ public class MainMenu : MonoBehaviour
 
     public bool Pause = false;
 
+    public GameObject TeamCanvas;
+    public GameObject ClavierIndices;
+
+    private void Start()
+    {
+        Pause = true;
+    }
 
     public void StartGame()
     {
+        
         if(Pause == true)
         {
             Mistake.enabled = true;
@@ -50,12 +58,17 @@ public class MainMenu : MonoBehaviour
 
     public void TeamButton()
     {
-        SceneManager.LoadScene(1);
+        TeamCanvas.SetActive(true);
     }
- 
 
-    public void OnMistakeClick()
+    public void Indices()
     {
+        ClavierIndices.SetActive(true);
+    }
+
+    public void MistakeClick()
+    {
+        //timerCountDown.
 
     }
 
