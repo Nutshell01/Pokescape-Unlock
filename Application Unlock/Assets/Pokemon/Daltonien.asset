@@ -25,13 +25,18 @@ MonoBehaviour:
   SkillPokemons:
   - NameOfSkill: Vision X
     IconeOfSkill: {fileID: -5432005676007710954, guid: 53b96bce5d08abc48a1b4059c9b1088d, type: 3}
-    NbOfSucces: 0c0000000e000000
-    NbOfNextCard: 0c0000000d000000
+    ListOfSuccessAndNextCard:
+    - NbOfSucces: 12
+      NbOfNextCard: 1e00000018000000
+    - NbOfSucces: 1
+      NbOfNextCard: 63000000
   - NameOfSkill: "Je t'ai \xE0 l'oeil"
     IconeOfSkill: {fileID: 9016082972496168736, guid: 1585cfd6a5c65fb46a323e4475b87994, type: 3}
-    NbOfSucces: 
-    NbOfNextCard: 
+    ListOfSuccessAndNextCard:
+    - NbOfSucces: 21
+      NbOfNextCard: 0c0000000a000000
   - NameOfSkill: OUI
     IconeOfSkill: {fileID: -3299429474701110686, guid: 54e07ae61c8cb5746ae6899606b0f9c5, type: 3}
-    NbOfSucces: 
-    NbOfNextCard: 
+    ListOfSuccessAndNextCard:
+    - NbOfSucces: 56
+      NbOfNextCard: 0100000032000000
