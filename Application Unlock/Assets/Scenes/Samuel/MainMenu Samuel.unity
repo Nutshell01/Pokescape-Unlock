@@ -1321,6 +1321,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 746443700}
+  - component: {fileID: 746443701}
   m_Layer: 0
   m_Name: Starter Manager
   m_TagString: Untagged
@@ -1342,6 +1343,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &746443701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746443699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2f50cef9529ff8448594b04061e4657, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentStarter: {fileID: 0}
 --- !u!1 &797265419
 GameObject:
   m_ObjectHideFlags: 0
@@ -1510,6 +1524,14 @@ PrefabInstance:
       propertyPath: ListIcone.Array.data[5]
       value: 
       objectReference: {fileID: 3817832298345871529}
+    - target: {fileID: 7295738219074630079, guid: 01dde61f275ae244681d1b75904d8e99, type: 3}
+      propertyPath: Starter1
+      value: 
+      objectReference: {fileID: 11400000, guid: 5e7957637b9804e43b93b1709844c28c, type: 2}
+    - target: {fileID: 7295738219074630079, guid: 01dde61f275ae244681d1b75904d8e99, type: 3}
+      propertyPath: Starter2
+      value: 
+      objectReference: {fileID: 11400000, guid: 00593b2a378b50841a312eb52a5c03ef, type: 2}
     - target: {fileID: 7415159932339465687, guid: 01dde61f275ae244681d1b75904d8e99, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -8335,6 +8357,7 @@ MonoBehaviour:
   InputPokemonNumber: {fileID: 3817832298803765161}
   pokemonTeam: {fileID: 837508948}
   pokedex: {fileID: 837508949}
+  starterManager: {fileID: 746443701}
 --- !u!114 &3817832297974992131
 MonoBehaviour:
   m_ObjectHideFlags: 0

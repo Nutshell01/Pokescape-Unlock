@@ -8,6 +8,7 @@ public class PokemonTeam : MonoBehaviour
     [SerializeField] private List<PokemonData> PokemonsInTeam = new List<PokemonData>();
     [SerializeField] private List<GameObject> ListIcone = new List<GameObject>();
     [SerializeField] private Sprite DefaultImage;
+    
     public List<PokemonData> pokemonsInTeam { get { return PokemonsInTeam; } set { PokemonsInTeam = value; } }
 
     public void ShowThePokemonInTeam(PokemonData pokemon)
