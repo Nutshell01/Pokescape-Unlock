@@ -87,12 +87,14 @@ public class AudioMicBlow : MonoBehaviour
     /// Starts the Mic, and plays the audio back in (near) real-time.
     private void StartMicListener()
     {
+    #if !UNITY_WEBGL || UNITY_EDITOR
         audioSource.clip = Microphone.Start("", true, 999, FREQUENCY);
         // HACK - Forces the function to wait until the microphone has started, before moving onto the play function.
         while (!(Microphone.GetPosition("") > 0))
         {
         }
         audioSource.Play();
+    #endif
     }
 
     /// Credits to aldonaletto for the function, http://goo.gl/VGwKt

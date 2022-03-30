@@ -8,11 +8,20 @@ public class SkillPokemon
 {
     [SerializeField] private string NameOfSkill;
     [SerializeField] private Sprite IconeOfSkill;
-    [SerializeField] private int NbOfSucces;
-    [SerializeField] private int NbOfNextCard;
+    [SerializeField] private List<SuccessAndNextCards> ListOfSuccessAndNextCard = new List<SuccessAndNextCards>();
 
     public string nameOfSkill => NameOfSkill;
     public Sprite iconeOfSkill => IconeOfSkill;
-    public int nbOfNextCard => NbOfNextCard;
+
+    public List<SuccessAndNextCards> listOfSuccessAndNextCard { get => ListOfSuccessAndNextCard; set => ListOfSuccessAndNextCard = value; }
+}
+
+[Serializable]
+public class SuccessAndNextCards
+{
+    [SerializeField] private int NbOfSucces;
+    [SerializeField] private List<int> NbOfNextCard = new List<int>();
+
+    public List<int> nbOfNextCard => NbOfNextCard;
     public int nbOfSucces => NbOfSucces;
 }

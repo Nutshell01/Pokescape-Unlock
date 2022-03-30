@@ -25,13 +25,16 @@ MonoBehaviour:
   SkillPokemons:
   - NameOfSkill: Explosion
     IconeOfSkill: {fileID: -3299429474701110686, guid: 54e07ae61c8cb5746ae6899606b0f9c5, type: 3}
-    NbOfSucces: 10
-    NbOfNextCard: 34
+    ListOfSuccessAndNextCard:
+    - NbOfSucces: 20
+      NbOfNextCard: 0c0000002d000000
   - NameOfSkill: Panda Vroom
     IconeOfSkill: {fileID: 9016082972496168736, guid: 1585cfd6a5c65fb46a323e4475b87994, type: 3}
-    NbOfSucces: 11
-    NbOfNextCard: 56
+    ListOfSuccessAndNextCard:
+    - NbOfSucces: 67
+      NbOfNextCard: 0300000008000000
   - NameOfSkill: ZA WORLDOOO
     IconeOfSkill: {fileID: -5432005676007710954, guid: 53b96bce5d08abc48a1b4059c9b1088d, type: 3}
-    NbOfSucces: 12
-    NbOfNextCard: 12
+    ListOfSuccessAndNextCard:
+    - NbOfSucces: 23
+      NbOfNextCard: 4c00000036000000
