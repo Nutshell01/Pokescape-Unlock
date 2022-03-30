@@ -3,17 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-[CreateAssetMenu(fileName = "Indice", menuName = "Indice")]
+[CreateAssetMenu(fileName = "Pokemon", menuName = "Pokemon")]
 
-public class PokemonScriptable : MonoBehaviour
+public class PokemonScriptable : ScriptableObject
 {
     
-        public int _indiceNumber;
-        [TextArea(3, 5)] public string _firstIndice;
-        [TextArea(3, 5)] public string _secondIndice;
-        public bool _usefulness;
-
-   
-
-    }
+    public int _pokemonNumber;
+    public string Nom;
+    public GameObject pokemon;
+}
 
