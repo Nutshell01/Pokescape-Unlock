@@ -40,6 +40,10 @@ public class AddPokemonButtonTrue : MonoBehaviour
                 pokemonTeam.ShowThePokemonInTeam(p);
                 break;
             }
+            else
+            {
+
+            }
         }
     }
 
