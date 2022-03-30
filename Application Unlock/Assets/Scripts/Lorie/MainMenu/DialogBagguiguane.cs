@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Dialog : MonoBehaviour
+public class DialogBagguiguane : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;
     public string[] sentences;
     private int index;
     public float typingSpeed;
-    public Animator textDisplayAnim;
 
     public GameObject continueButton;
 
@@ -45,7 +44,6 @@ public class Dialog : MonoBehaviour
 
     public void NextSentences()
     {
-        textDisplayAnim.SetTrigger("Change");
         continueButton.SetActive(false);
         StartCoroutine(TextChange());
 

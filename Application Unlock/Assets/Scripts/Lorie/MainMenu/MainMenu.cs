@@ -24,6 +24,7 @@ public class MainMenu : MonoBehaviour
     public GameObject PokedexCanvas;
     public GameObject CodeGroup;
 
+
     private void Start()
     {
         Pause = true;
@@ -67,15 +68,12 @@ public class MainMenu : MonoBehaviour
 
     public void MistakeClick()
     {
-        //timerCountDown.Duration= -1;
-
+        timerCountDown.remainingDuration = timerCountDown.remainingDuration - 60;
     }
 
     public void MachineClick()
     {
         CodeGroup.SetActive(true);
     }
-
-   
 
 }
