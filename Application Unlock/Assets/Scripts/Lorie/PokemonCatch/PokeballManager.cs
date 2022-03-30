@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PokeballManager : MonoBehaviour
 {
     [SerializeField] private Pokeball pokeball = null;
     public bool HasCaught;
+
+    public GameObject textBravo;
 
     public void OnTriggerEnter(Collider other)
     {
@@ -22,6 +25,7 @@ public class PokeballManager : MonoBehaviour
         this.GetComponent<Rigidbody>().velocity = Vector3.zero;
         Destroy(Pokemon.gameObject);
         yield return new WaitForSeconds(1);
+        //pokeball.dragging = false;
         this.GetComponent<Rigidbody>().useGravity = true;
         yield return new WaitForSeconds(1);
         GameObject.FindGameObjectWithTag("MainCamera").transform.LookAt(this.transform);
@@ -41,6 +45,9 @@ public class PokeballManager : MonoBehaviour
         transform.Rotate(Vector3.right * 10);
         yield return new WaitForSeconds(0.1f);
         transform.Rotate(-Vector3.right * 10);
+
+        yield return new WaitForSeconds(0.5f);
+        textBravo.SetActive(true);
 
         HasCaught = true;
     }

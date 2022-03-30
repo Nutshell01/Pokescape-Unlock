@@ -1475,6 +1475,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f27b82db26c7bae428738d3904f53935, type: 3}
+--- !u!1 &470260030 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3984382410154031903, guid: af9c638c1564e6045b813a72c668b0f7, type: 3}
+  m_PrefabInstance: {fileID: 417152279}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &537914616
 GameObject:
   m_ObjectHideFlags: 0
@@ -3366,7 +3371,7 @@ MonoBehaviour:
   TeamCanvas: {fileID: 161554657}
   ClavierIndices: {fileID: 859466870}
   PokedexCanvas: {fileID: 970379601}
-  CodeGroup: {fileID: 0}
+  CodeGroup: {fileID: 470260030}
 --- !u!1 &1919043014
 GameObject:
   m_ObjectHideFlags: 0

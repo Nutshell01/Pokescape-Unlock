@@ -22,6 +22,10 @@ public class Pokeball : MonoBehaviour
         this.GetComponent<Rigidbody>().velocity += this.transform.forward * ThrowSpeed;
         this.GetComponent<Rigidbody>().velocity += this.transform.up * ArchSpeed;
         dragging = false;
+
+        Speed = 0;
+        ThrowSpeed = 0;
+        ArchSpeed = 0;
     }
 
     private void Update()
