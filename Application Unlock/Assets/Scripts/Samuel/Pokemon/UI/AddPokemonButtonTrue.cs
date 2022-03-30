@@ -10,6 +10,7 @@ public class AddPokemonButtonTrue : MonoBehaviour
     [SerializeField] private PokemonTeam pokemonTeam;
     [SerializeField] private Pokedex pokedex;
     [SerializeField] private StarterManager starterManager;
+    [SerializeField] private Canvas UIPenality;
 
     private bool StarterIsAdded;
 
@@ -26,24 +27,29 @@ public class AddPokemonButtonTrue : MonoBehaviour
 
     private void CheckAndAddPokemon()
     {
+        PokemonData selectedPokemon = null;
         for(int i = 0; i < pokedex.pokemonInThePokedex.Count; i++)
         {
             PokemonData p = pokedex.pokemonInThePokedex[i];
             if (int.Parse(InputPokemonNumber.text) == p.numberOfPokemon && p.isInTeam == false)
             {
-                if(StarterIsAdded == false)
-                {
-                    CheckIfStartIsAdd(p);
-                }
-                p.isInTeam = true;
-                pokemonTeam.pokemonsInTeam.Add(p);
-                pokemonTeam.ShowThePokemonInTeam(p);
+                selectedPokemon = p;
                 break;
             }
-            else
+        }
+        if (selectedPokemon != null)
+        {
+            if (StarterIsAdded == false)
             {
-
+                CheckIfStartIsAdd(selectedPokemon);
             }
+            selectedPokemon.isInTeam = true;
+            pokemonTeam.pokemonsInTeam.Add(selectedPokemon);
+            pokemonTeam.ShowThePokemonInTeam(selectedPokemon);
+        }
+        else
+        {
+            UIPenality.enabled = true;
         }
     }
 
