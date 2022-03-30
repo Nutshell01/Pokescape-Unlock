@@ -9,6 +9,9 @@ public class AddPokemonButtonTrue : MonoBehaviour
     [SerializeField] private TMP_InputField InputPokemonNumber;
     [SerializeField] private PokemonTeam pokemonTeam;
     [SerializeField] private Pokedex pokedex;
+    [SerializeField] private StarterManager starterManager;
+
+    private bool StarterIsAdded;
 
     void OnGUI()
     {
@@ -28,11 +31,33 @@ public class AddPokemonButtonTrue : MonoBehaviour
             PokemonData p = pokedex.pokemonInThePokedex[i];
             if (int.Parse(InputPokemonNumber.text) == p.numberOfPokemon && p.isInTeam == false)
             {
+                if(StarterIsAdded == false)
+                {
+                    CheckIfStartIsAdd(p);
+                }
                 p.isInTeam = true;
                 pokemonTeam.pokemonsInTeam.Add(p);
                 pokemonTeam.ShowThePokemonInTeam(p);
                 break;
             }
+            else
+            {
+
+            }
+        }
+    }
+
+    private void CheckIfStartIsAdd(PokemonData currentPokemon)
+    {
+        if(currentPokemon == pokedex.starter1)
+        {
+            starterManager.AddTheStarter(pokedex.starter1, pokedex.starter2, pokedex.pokemonInThePokedex);
+            StarterIsAdded = true;
+        }
+        else if (currentPokemon == pokedex.starter2)
+        {
+            starterManager.AddTheStarter(pokedex.starter2, pokedex.starter1, pokedex.pokemonInThePokedex);
+            StarterIsAdded = true;
         }
     }
 }
