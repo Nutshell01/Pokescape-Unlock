@@ -42,7 +42,7 @@ public class AudioMicBlow : MonoBehaviour
     [SerializeField] private float vitesseFill = 2;
     [SerializeField] private GameObject chargeBar; 
     [SerializeField] private TextMeshProUGUI endMachineTMP;
-    public TextMeshProUGUI debugLowPass, debugMaths;
+    public TextMeshProUGUI debugLowPass;
     [SerializeField, TextArea(3, 5)] private string endMessage;
     
 
@@ -178,13 +178,11 @@ public class AudioMicBlow : MonoBehaviour
         lowPassResults = LowPassFilter(dbValue);
 
         //Visualizer
-        Debug.Log(-30 + (lowPassResults + 30) / 20);
-        debugMaths.text = "result : " + (-30 + (lowPassResults + 30) / 20).ToString();
-
-        //detecFill.fillAmount = -30 + (lowPassResults + 30) / 20;  
+        float result = (lowPassResults + 60) / 80;
+        detecFill.fillAmount = result;  
 
         // Decides whether this instance of the result could be a blow or not.
-        if (lowPassResults >= 1 && lowPassResults <= 7) //&& sumPitch == 0
+        if (lowPassResults >= 1) //&& sumPitch == 0
         {
             blowingTime += 1;
             
