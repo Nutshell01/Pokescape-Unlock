@@ -10,7 +10,7 @@ public class TimerCountDown : MonoBehaviour
     [SerializeField] private MainMenu mainMenu = null;
 
     public int Duration;
-    private int remainingDuration;
+    public int remainingDuration;
 
     private void Start()
     {
@@ -38,7 +38,6 @@ public class TimerCountDown : MonoBehaviour
         }
         OnEnd();
     }
-
     private void OnEnd()
     {
         print("End");

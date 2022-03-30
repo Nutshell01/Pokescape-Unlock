@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Text.RegularExpressions; // needed for Regex
+using System.Text;
 
 public class ButtonCheckNumber : MonoBehaviour
 {
@@ -26,14 +27,22 @@ public class ButtonCheckNumber : MonoBehaviour
     }
     public void CheckNumber()
     {
-        if (CurrentSkill.nbOfSucces == int.Parse(InputNumber.text))
+        
+        for(int i = 0; i < CurrentSkill.listOfSuccessAndNextCard.Count; i++)
         {
-            SuccesCanvas.enabled = true;
-            SuccesCanvasScript.ComputeNbOfCard(CurrentSkill.nbOfNextCard.ToString());
+            StringBuilder stringBuilder = new StringBuilder();
+            if (CurrentSkill.listOfSuccessAndNextCard[i].nbOfSucces == int.Parse(InputNumber.text))
+            {
+                SuccesCanvas.enabled = true;
+                for(int j =0; j< CurrentSkill.listOfSuccessAndNextCard[i].nbOfNextCard.Count; j++)
+                {
+                    stringBuilder.Append(CurrentSkill.listOfSuccessAndNextCard[i].nbOfNextCard[j].ToString());
+                    stringBuilder.Append(" ");
+                }
+                SuccesCanvasScript.ComputeNbOfCard(stringBuilder.ToString());
+                return;
+            }
         }
-        else
-        {
-            PenalityCanvas.enabled = true;
-        }
+        PenalityCanvas.enabled = true;
     }
 }

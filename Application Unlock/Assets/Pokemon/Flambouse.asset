@@ -10,31 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b3e372f0cafeaf446b1651fa3ac41494, type: 3}
-  m_Name: Flambi
+  m_Name: Flambouse
   m_EditorClassIdentifier: 
   IsInTeam: 0
-  NamePokemon: Flambi
-  InfoPokemon: Il mange du Flan
+  NamePokemon: Flambouse
+  InfoPokemon: "Bouge de la fr\xE9ro je suis l'ORIGINAL "
   ArrayTypeOfPokemons:
-  - TypeIcone: {fileID: -4865579590404209085, guid: 6ca0c489a20bcd54092d6cc7fbd537dd, type: 3}
-    typeOfPokemon: 0
+  - TypeIcone: {fileID: -2665991450122522756, guid: 6ca0c489a20bcd54092d6cc7fbd537dd, type: 3}
+    typeOfPokemon: 1
   - TypeIcone: {fileID: -7238228040663250830, guid: 6ca0c489a20bcd54092d6cc7fbd537dd, type: 3}
-    typeOfPokemon: 9
+    typeOfPokemon: 8
   IconPokemon: {fileID: -3463732287345018557, guid: 53e7056c098425546a48a3eac3db43d3, type: 3}
-  NumberOfPokemon: 45
+  NumberOfPokemon: 34
   SkillPokemons:
-  - NameOfSkill: Explosion
-    IconeOfSkill: {fileID: -3299429474701110686, guid: 54e07ae61c8cb5746ae6899606b0f9c5, type: 3}
-    ListOfSuccessAndNextCard:
-    - NbOfSucces: 20
-      NbOfNextCard: 0c0000002d000000
-  - NameOfSkill: Panda Vroom
-    IconeOfSkill: {fileID: 9016082972496168736, guid: 1585cfd6a5c65fb46a323e4475b87994, type: 3}
-    ListOfSuccessAndNextCard:
-    - NbOfSucces: 67
-      NbOfNextCard: 0300000008000000
-  - NameOfSkill: ZA WORLDOOO
+  - NameOfSkill: Flambi Insurrection
     IconeOfSkill: {fileID: -5432005676007710954, guid: 53b96bce5d08abc48a1b4059c9b1088d, type: 3}
-    ListOfSuccessAndNextCard:
-    - NbOfSucces: 23
-      NbOfNextCard: 4c00000036000000
+    NbOfSucces: 12
+    NbOfNextCard: 5
+  - NameOfSkill: Evian
+    IconeOfSkill: {fileID: -3299429474701110686, guid: 54e07ae61c8cb5746ae6899606b0f9c5, type: 3}
+    NbOfSucces: 23
+    NbOfNextCard: 1
+  - NameOfSkill: Compote ^^
+    IconeOfSkill: {fileID: 9016082972496168736, guid: 1585cfd6a5c65fb46a323e4475b87994, type: 3}
+    NbOfSucces: 12
+    NbOfNextCard: 1
