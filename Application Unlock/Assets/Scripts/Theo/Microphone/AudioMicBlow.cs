@@ -14,7 +14,7 @@ public class AudioMicBlow : MonoBehaviour
     private const float ALPHA = 0.05f;      // The alpha for the low pass filter (I don't really understand this).
     
     [Header("Mic Blow Value")]
-    public TextMeshProUGUI blowDisplay;     // GUIText for displaying blow or not blow.
+    private TextMeshProUGUI blowDisplay;     // GUIText for displaying blow or not blow.
 
     [Tooltip("How many previous frames of sound are analyzed")]
     public int recordedLength = 30;
@@ -42,7 +42,6 @@ public class AudioMicBlow : MonoBehaviour
     [SerializeField] private float vitesseFill = 2;
     [SerializeField] private GameObject chargeBar; 
     [SerializeField] private TextMeshProUGUI endMachineTMP;
-    public TextMeshProUGUI debugLowPass;
     [SerializeField, TextArea(3, 5)] private string endMessage;
     
 
@@ -84,8 +83,8 @@ public class AudioMicBlow : MonoBehaviour
             endMachineTMP.text = endMessage;
         }
 
-        //Debug des Blow
-        debugLowPass.text = "lowPass : " + lowPassResults.ToString();
+        // //Debug des Blow
+        // debugLowPass.text = "lowPass : " + lowPassResults.ToString();
         
 
     }
@@ -196,12 +195,12 @@ public class AudioMicBlow : MonoBehaviour
         // This example says "blowing", or "not blowing".
         if (blowingTime > requiedBlowTime)
         {
-            blowDisplay.text = "Blowing";
+            //blowDisplay.text = "Blowing";
             chargementFill.fillAmount += 0.1f * Time.deltaTime * vitesseFill; 
         }
         else
         {
-            blowDisplay.text = "Not blowing";
+            //blowDisplay.text = "Not blowing";
             chargementFill.fillAmount -= 0.01f * Time.deltaTime;
 
         }
