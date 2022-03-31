@@ -11,7 +11,7 @@ public class PokemonCatchKeypad : MonoBehaviour
     [SerializeField] float _textSpacing4digits;
     [SerializeField] float _textSpacing2digits;
     [SerializeField] TextMeshProUGUI _screenText;
-    [SerializeField] SpawnIndice _spawnIndice;
+    //[SerializeField] SpawnPokemon spawnPokemon;
     [SerializeField] GameObject _clavierCanvas;
     private int _outputValue;
 
@@ -48,7 +48,7 @@ public class PokemonCatchKeypad : MonoBehaviour
             case "V":
 
                 int.TryParse(_input, out _outputValue);
-                _spawnIndice.SpawnFirstIndice();
+                //spawnPokemon.test();
                 _input = "";
                 _buttonPressed = 0;
                 _screenText.text = _input.ToString();
