@@ -14,10 +14,10 @@ public class AudioMicBlow : MonoBehaviour
     private const float ALPHA = 0.05f;      // The alpha for the low pass filter (I don't really understand this).
     
     [Header("Mic Blow Value")]
-    public TextMeshProUGUI blowDisplay;     // GUIText for displaying blow or not blow.
+    private TextMeshProUGUI blowDisplay;     // GUIText for displaying blow or not blow.
 
     [Tooltip("How many previous frames of sound are analyzed")]
-    public int recordedLength = 50;
+    public int recordedLength = 30;
     [Tooltip ("How long a blow must last to be classified as a blow (and not a sigh for instance)")]
     public int requiedBlowTime = 4;    // How long a blow must last to be classified as a blow (and not a sigh for instance).
     [HideInInspector] public int clamp = 160;            // Used to clamp dB (I don't really understand this either).
@@ -38,7 +38,7 @@ public class AudioMicBlow : MonoBehaviour
 
     [Space]
     [Header("UI")]
-    [SerializeField] private Image chargementFill;
+    [SerializeField] private Image chargementFill, detecFill;
     [SerializeField] private float vitesseFill = 2;
     [SerializeField] private GameObject chargeBar; 
     [SerializeField] private TextMeshProUGUI endMachineTMP;
@@ -82,6 +82,11 @@ public class AudioMicBlow : MonoBehaviour
             chargeBar.SetActive(false);
             endMachineTMP.text = endMessage;
         }
+
+        // //Debug des Blow
+        // debugLowPass.text = "lowPass : " + lowPassResults.ToString();
+        
+
     }
 
     /// Starts the Mic, and plays the audio back in (near) real-time.
@@ -150,6 +155,8 @@ public class AudioMicBlow : MonoBehaviour
 
         // Convert index to frequency
         pitchValue = freqN * 24000 / SAMPLECOUNT;
+
+        
     }
  
     private void DeriveBlow()
@@ -169,8 +176,12 @@ public class AudioMicBlow : MonoBehaviour
         // Run our low pass filter.
         lowPassResults = LowPassFilter(dbValue);
 
+        //Visualizer
+        float result = (lowPassResults + 60) / 80;
+        detecFill.fillAmount = result;  
+
         // Decides whether this instance of the result could be a blow or not.
-        if (lowPassResults > -30  && sumPitch == 0) 
+        if (lowPassResults >= 1) //&& sumPitch == 0
         {
             blowingTime += 1;
             
@@ -184,12 +195,12 @@ public class AudioMicBlow : MonoBehaviour
         // This example says "blowing", or "not blowing".
         if (blowingTime > requiedBlowTime)
         {
-            blowDisplay.text = "Blowing";
+            //blowDisplay.text = "Blowing";
             chargementFill.fillAmount += 0.1f * Time.deltaTime * vitesseFill; 
         }
         else
         {
-            blowDisplay.text = "Not blowing";
+            //blowDisplay.text = "Not blowing";
             chargementFill.fillAmount -= 0.01f * Time.deltaTime;
 
         }

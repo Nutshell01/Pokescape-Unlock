@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class ButtonMainMenu : MonoBehaviour
 {
+    [SerializeField] private Canvas CanvasPenality;
     private void Awake()
     {
         UnityEngine.UI.Button b = gameObject.GetComponent<UnityEngine.UI.Button>();
@@ -13,6 +13,6 @@ public class ButtonMainMenu : MonoBehaviour
 
     public void BackToMainMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        CanvasPenality.enabled = false;
     }
 }

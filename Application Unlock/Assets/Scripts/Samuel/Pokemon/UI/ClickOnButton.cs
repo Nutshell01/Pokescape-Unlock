@@ -28,8 +28,11 @@ public class ClickOnButton : MonoBehaviour
     }
     public void OpenPokemonInterface()
     {
-        CanvasInterface.GetComponent<Canvas>().enabled = true;
-        CanvasInterface.GetComponent<SelectedPokemonCanvas>().ComputeCanvas(logInterfacePokemon.currentPokemon);
+        if(logInterfacePokemon.currentPokemon != null)
+        {
+            CanvasInterface.GetComponent<Canvas>().enabled = true;
+            CanvasInterface.GetComponent<SelectedPokemonCanvas>().ComputeCanvas(logInterfacePokemon.currentPokemon);
+        }
     }
 
     public void OpenSkillInterface()
