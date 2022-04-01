@@ -7,65 +7,48 @@ public class CodeManager : MonoBehaviour
 {
     [Space]
     [SerializeField] private Keypad keypadScript = null;
-
-    [Space, Header("UI")]
-    [SerializeField] private Canvas penalityCanvas = null;
-    [SerializeField] private Canvas validatedCanvas = null;
-    [SerializeField] private TextMeshProUGUI description = null;
-
-    [Space, Header("Code & description")]
-    [SerializeField] private List<int> codes = new List<int>(); //Liste de tout les codes valide
-    [SerializeField, TextArea(3, 5)] private List<string> descCard = new List<string>(); //La description de la carte par rapport à l'indice du code
+    [SerializeField] private Canvas errorMachine = null;
+    
+    [Space, Header("Codes & machines")]
+    [SerializeField] private List<int> codesMachines = new List<int>(); //Liste de tout les codes pour appeler les machine
+    [SerializeField] private List<Canvas> machines = new List<Canvas>(); //Les prefabs des machines
 
     private int codeToCheck = 0;
 
     private void Awake()
     {
-        penalityCanvas.enabled = false;
-        validatedCanvas.enabled = false;
+        errorMachine.enabled = false;
     }
 
     public void CheckCode()
     {
         codeToCheck = keypadScript.GetOutputValue();
 
-        if (!codes.Contains(codeToCheck)) //Si le code n'est pas dans la liste => invalide
+        if (!codesMachines.Contains(codeToCheck)) //Si le code n'est pas dans la liste => invalide
         {
-            Debug.Log("le code n'est dans la liste");
-            DisplayPenalty();
+            Debug.Log("La machine n'existe pas");
+            DisplayError();
         }
         else
         {
-            for (int i = 0; i < codes.Count; i++) //on récupère l'indice de la liste des code pour pouvoir l'afficher dans DisplayCardUnlock()
+            for (int i = 0; i < codesMachines.Count; i++)
             {
-                if (codeToCheck == codes[i])
+                if (codeToCheck == codesMachines[i])
                 {
-                    Debug.Log("Le code : " + codes[i] + " débloque la carte XX");
-                    DisplayCardUnlock(i);
+                    DisplayMachine(i);
                 }
             }
         }
     }
 
-    public void DisplayPenalty() //affiche un message quand on n'a pas rentrer le bon code
+    public void DisplayError() //affiche un message d'erreur quand la machine n'existe pas
     {
-        penalityCanvas.enabled = !penalityCanvas.enabled;
+        errorMachine.enabled = !errorMachine.enabled;
     }
 
-    public void DisplayCardUnlock(int _index)
+    public void DisplayMachine(int _index)
     {
-        if(validatedCanvas.enabled)
-        {
-            validatedCanvas.enabled = !validatedCanvas.enabled; //désactive le canvas pour cacher l'UI
-        }
-        else //Sinon on active l'UI et on met à jour le text par rapport à l'index donné
-        {
-            validatedCanvas.enabled = true;
-
-            description.text = descCard[_index];
-
-        }
-        
+        machines[_index].enabled = true;  
     }
 
 }
