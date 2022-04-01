@@ -11,6 +11,7 @@ public class AddPokemonButtonTrue : MonoBehaviour
     [SerializeField] private Pokedex pokedex;
     [SerializeField] private StarterManager starterManager;
     [SerializeField] private Canvas UIPenality;
+    [SerializeField] private Canvas ThisCanvas;
     [SerializeField] private Pokeball pokeball;
 
     private bool StarterIsAdded;
@@ -49,6 +50,7 @@ public class AddPokemonButtonTrue : MonoBehaviour
             pokemonTeam.ShowThePokemonInTeam(selectedPokemon);
 
             //desactiver le canvas
+            ThisCanvas.enabled = false;
             pokeball.initialBall();
 
         }

@@ -19,10 +19,11 @@ public class MainMenu : MonoBehaviour
 
     public bool Pause = false;
 
-    public GameObject TeamCanvas;
-    public GameObject ClavierIndices;
-    public GameObject PokedexCanvas;
-    public GameObject CodeGroup;
+    [Header("Canvas")]
+    public Canvas TeamCanvas;
+    public Canvas ClavierIndices;
+    public Canvas PokedexCanvas;
+    public Canvas CodeGroup;
 
 
     private void Start()
@@ -58,12 +59,12 @@ public class MainMenu : MonoBehaviour
 
     public void TeamButton()
     {
-        TeamCanvas.SetActive(true);
+        TeamCanvas.enabled = true;
     }
 
     public void Indices()
     {
-        ClavierIndices.SetActive(true);
+        ClavierIndices.enabled = true;
     }
 
     public void MistakeClick()
@@ -73,7 +74,7 @@ public class MainMenu : MonoBehaviour
 
     public void MachineClick()
     {
-        CodeGroup.SetActive(true);
+        CodeGroup.enabled = true;
     }
 
 }
