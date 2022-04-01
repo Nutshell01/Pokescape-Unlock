@@ -8909,6 +8909,7 @@ MonoBehaviour:
   pokedex: {fileID: 837508949}
   starterManager: {fileID: 746443701}
   UIPenality: {fileID: 7083518051861730650}
+  ThisCanvas: {fileID: 3817832296956576716}
   pokeball: {fileID: 726124288}
 --- !u!114 &3817832297974992131
 MonoBehaviour:
@@ -10260,6 +10261,10 @@ PrefabInstance:
     - target: {fileID: 9031839384191441344, guid: f2451e2b8591dc546aeb7ec68be30947, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9031839384191441345, guid: f2451e2b8591dc546aeb7ec68be30947, type: 3}
+      propertyPath: CurrentStarter
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9031839384191441351, guid: f2451e2b8591dc546aeb7ec68be30947, type: 3}
       propertyPath: m_Name
