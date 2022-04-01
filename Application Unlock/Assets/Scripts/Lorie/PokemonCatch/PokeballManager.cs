@@ -53,6 +53,8 @@ public class PokeballManager : MonoBehaviour
         canvas.enabled = true;
         HasCaught = true;
 
+        GameObject.FindGameObjectWithTag("MainCamera").gameObject.GetComponent<Camera>().fieldOfView = 60f;
+        GameObject.FindGameObjectWithTag("MainCamera").gameObject.GetComponent<Camera>().transform.rotation = Quaternion.Euler(0,0,0);
         pokeball.ResetBall();
     }
 }
