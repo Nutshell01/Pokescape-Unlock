@@ -7,6 +7,7 @@ public class PokeballManager : MonoBehaviour
 {
     [SerializeField] private Pokeball pokeball = null;
     public bool HasCaught;
+    public Canvas canvas;
 
     public GameObject textBravo;
 
@@ -49,6 +50,9 @@ public class PokeballManager : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         textBravo.SetActive(true);
 
+        canvas.enabled = true;
         HasCaught = true;
+
+        pokeball.ResetBall();
     }
 }

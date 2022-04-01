@@ -20,10 +20,13 @@ public class PokemonData : ScriptableObject
     [SerializeField] protected int NumberOfPokemon;
     [SerializeField] protected SkillPokemon[] SkillPokemons = new SkillPokemon[3];
     [SerializeField] protected Dictionary<int, SkillPokemon> Oui = new Dictionary<int, SkillPokemon>();
+    [SerializeField] private GameObject PokemonModel3D;
 
     public int numberOfPokemon => NumberOfPokemon;
     public SkillPokemon[] skillPokemons { get { return SkillPokemons; } set { SkillPokemons = value; } }
     public TypePokemon[] arrayTypeOfPokemons => ArrayTypeOfPokemons;
     public string namePokemon => NamePokemon;
     public Sprite sprite { get { return IconPokemon; } set { IconPokemon = value; } }
+
+    public GameObject pokemonModel3D { get => PokemonModel3D; set => PokemonModel3D = value; }
 }

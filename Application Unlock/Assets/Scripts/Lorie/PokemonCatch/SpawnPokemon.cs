@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class SpawnPokemon : MonoBehaviour
 {
-    public PokemonScriptable pokemonScriptable;
+    public PokemonData pokemonData;
 
-    private void Update()
+    private void Start()
     {
-        Debug.Log(pokemonScriptable.pokemon);
+        GameObject.Instantiate(pokemonData.pokemonModel3D, Vector3.zero, pokemonData.pokemonModel3D.transform.rotation, transform);
     }
+
+ 
 }
