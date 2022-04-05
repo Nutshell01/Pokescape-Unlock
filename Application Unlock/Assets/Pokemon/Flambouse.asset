@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3e372f0cafeaf446b1651fa3ac41494, type: 3}
   m_Name: Flambouse
   m_EditorClassIdentifier: 
-  IsInTeam: 0
+  IsInTeam: 1
   NamePokemon: Flambouse
   InfoPokemon: "Bouge de la fr\xE9ro je suis l'ORIGINAL "
   ArrayTypeOfPokemons:

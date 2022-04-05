@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3e372f0cafeaf446b1651fa3ac41494, type: 3}
   m_Name: Daltonien
   m_EditorClassIdentifier: 
-  IsInTeam: 0
+  IsInTeam: 1
   NamePokemon: Daltonien
   InfoPokemon: Il voit genre comme une personne normal mais avec des differences
   ArrayTypeOfPokemons:
