@@ -25,13 +25,11 @@ MonoBehaviour:
   SkillPokemons:
   - NameOfSkill: Flambi Insurrection
     IconeOfSkill: {fileID: -5432005676007710954, guid: 53b96bce5d08abc48a1b4059c9b1088d, type: 3}
-    NbOfSucces: 12
-    NbOfNextCard: 5
+    ListOfSuccessAndNextCard: []
   - NameOfSkill: Evian
     IconeOfSkill: {fileID: -3299429474701110686, guid: 54e07ae61c8cb5746ae6899606b0f9c5, type: 3}
-    NbOfSucces: 23
-    NbOfNextCard: 1
+    ListOfSuccessAndNextCard: []
   - NameOfSkill: Compote ^^
     IconeOfSkill: {fileID: 9016082972496168736, guid: 1585cfd6a5c65fb46a323e4475b87994, type: 3}
-    NbOfSucces: 12
-    NbOfNextCard: 1
+    ListOfSuccessAndNextCard: []
+  PokemonModel3D: {fileID: 4890908502054906154, guid: c4a41c4adb8856d45aa8e5db2af51708, type: 3}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3e372f0cafeaf446b1651fa3ac41494, type: 3}
   m_Name: Daltonien
   m_EditorClassIdentifier: 
-  IsInTeam: 1
+  IsInTeam: 0
   NamePokemon: Daltonien
   InfoPokemon: Il voit genre comme une personne normal mais avec des differences
   ArrayTypeOfPokemons:
@@ -40,4 +40,4 @@ MonoBehaviour:
     ListOfSuccessAndNextCard:
     - NbOfSucces: 56
       NbOfNextCard: 0100000032000000
-  PokemonModel3D: {fileID: 919132149155446097, guid: 608f141e9fef4e44481d835f5768f29e, type: 3}
+  PokemonModel3D: {fileID: 5339351608433493341, guid: ab1b72455ce085c49bf6cfe4b289769e, type: 3}
