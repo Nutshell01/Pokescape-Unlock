@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class CodeManager : MonoBehaviour
+public class MachineManager : MonoBehaviour
 {
     [Space]
-    [SerializeField] private Keypad keypadScript = null;
+    [SerializeField] private KeypadMachine keypadScript = null;
     [SerializeField] private Canvas errorMachine = null;
     
     [Space, Header("Codes & machines")]
@@ -44,6 +44,11 @@ public class CodeManager : MonoBehaviour
     public void DisplayError() //affiche un message d'erreur quand la machine n'existe pas
     {
         errorMachine.enabled = !errorMachine.enabled;
+    }
+
+    public void HideMachine(Canvas _machineCanvas)
+    {
+        _machineCanvas.enabled = !_machineCanvas.enabled;
     }
 
     public void DisplayMachine(int _index)
