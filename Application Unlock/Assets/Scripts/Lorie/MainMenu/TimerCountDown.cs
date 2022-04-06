@@ -29,7 +29,7 @@ public class TimerCountDown : MonoBehaviour
         {
             if (mainMenu.Pause == false)
             {
-                Text.text = $"{remainingDuration / 60:00} : {remainingDuration % 60:00}";
+                Text.text = $"{remainingDuration /60:00}   :   {remainingDuration %60:00}";
                 remainingDuration--;
                 yield return new WaitForSeconds(1f);
             }

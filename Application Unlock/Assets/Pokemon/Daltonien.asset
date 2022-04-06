@@ -40,4 +40,4 @@ MonoBehaviour:
     ListOfSuccessAndNextCard:
     - NbOfSucces: 56
       NbOfNextCard: 0100000032000000
-  PokemonModel3D: {fileID: 919132149155446097, guid: 608f141e9fef4e44481d835f5768f29e, type: 3}
+  PokemonModel3D: {fileID: 5339351608433493341, guid: ab1b72455ce085c49bf6cfe4b289769e, type: 3}

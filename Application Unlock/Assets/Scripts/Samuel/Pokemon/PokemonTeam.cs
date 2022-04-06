@@ -17,7 +17,7 @@ public class PokemonTeam : MonoBehaviour
         {
             if(ListIcone[i].GetComponent<LogInterfacePokemon>().haveAPokemon == false)
             {
-                ListIcone[i].GetComponent<LogInterfacePokemon>().ComputeLogInterface(pokemon.sprite, pokemon.arrayTypeOfPokemons[0].typeIcone, pokemon.arrayTypeOfPokemons[1].typeIcone, pokemon.namePokemon,pokemon);
+                ListIcone[i].GetComponent<LogInterfacePokemon>().ComputeLogInterface(pokemon.sprite, pokemon.arrayTypeOfPokemons[0].typeIcone, pokemon.arrayTypeOfPokemons[1].typeIcone, pokemon.namePokemon, pokemon);
                 break;
             }
         }
