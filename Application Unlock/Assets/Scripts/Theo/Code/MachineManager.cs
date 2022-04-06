@@ -11,7 +11,7 @@ public class MachineManager : MonoBehaviour
     
     [Space, Header("Codes & machines")]
     [SerializeField] private List<int> codesMachines = new List<int>(); //Liste de tout les codes pour appeler les machine
-    [SerializeField] private List<Canvas> machines = new List<Canvas>(); //Les prefabs des machines
+    [SerializeField] private List<GameObject> machines = new List<GameObject>(); //Les prefabs des machines
 
     private int codeToCheck = 0;
 
@@ -46,14 +46,14 @@ public class MachineManager : MonoBehaviour
         errorMachine.enabled = !errorMachine.enabled;
     }
 
-    public void HideMachine(Canvas _machineCanvas)
+    public void HideMachine(GameObject _machineCanvas)
     {
-        _machineCanvas.enabled = !_machineCanvas.enabled;
+        _machineCanvas.SetActive(!_machineCanvas.activeSelf);
     }
 
     public void DisplayMachine(int _index)
     {
-        machines[_index].enabled = true;  
+        machines[_index].SetActive(true);  
     }
 
 }
