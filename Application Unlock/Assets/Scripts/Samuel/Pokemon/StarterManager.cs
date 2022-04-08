@@ -1,12 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using MyBox;
 
 
 public class StarterManager : MonoBehaviour
 {
-    [ReadOnly, SerializeField] private PokemonData CurrentStarter;
+    [SerializeField] private PokemonData CurrentStarter;
 
     public PokemonData currentStarter { get => CurrentStarter; set => CurrentStarter = value; }
 
