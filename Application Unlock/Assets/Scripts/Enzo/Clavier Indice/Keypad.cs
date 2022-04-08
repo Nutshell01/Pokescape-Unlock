@@ -12,7 +12,8 @@ public class Keypad : MonoBehaviour
     [SerializeField] float _textSpacing2digits;
     [SerializeField] TextMeshProUGUI _screenText;
     [SerializeField] SpawnIndice _spawnIndice;
-    [SerializeField] GameObject _clavierCanvas;
+    [SerializeField] Canvas _clavierCanvas;
+    [SerializeField] Canvas _indiceCanvas;
     private int _outputValue;
 
 
@@ -52,7 +53,7 @@ public class Keypad : MonoBehaviour
                 _input = "";
                 _buttonPressed = 0;
                 _screenText.text = _input.ToString();
-                _clavierCanvas.SetActive(false);
+                _indiceCanvas.enabled = true;
 
                 break;
 
@@ -78,6 +79,10 @@ public class Keypad : MonoBehaviour
     {
 
         return _outputValue;
+    }
+    public void DisableClavier()
+    {
+        _clavierCanvas.enabled = false;
     }
 
 }

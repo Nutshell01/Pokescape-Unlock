@@ -7,7 +7,7 @@ public class SpawnIndice : MonoBehaviour
     [SerializeField] TextMeshProUGUI _currentIndiceNumber;
     [SerializeField] TextMeshProUGUI _currentText;
     [SerializeField] GameObject _IndiceButton;
-    [SerializeField] GameObject _clavierCanvas;
+    [SerializeField] Canvas _canvas;
     [SerializeField] Keypad _keycodeScript;
     [SerializeField] IndiceDictionary _dictionnaryScript;
     private int _indiceToSpawn;
@@ -32,6 +32,6 @@ public class SpawnIndice : MonoBehaviour
 
     public void ReactivateKeypad()
     {
-        _clavierCanvas.SetActive(true);
+        _canvas.enabled = false;
     }
 }

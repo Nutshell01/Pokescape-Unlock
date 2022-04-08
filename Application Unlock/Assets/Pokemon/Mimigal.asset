@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3e372f0cafeaf446b1651fa3ac41494, type: 3}
+  m_Name: Mimigal
+  m_EditorClassIdentifier: 
+  IsInTeam: 0
+  NamePokemon: Mimigal
+  InfoPokemon: Un petit insecte qui tisse des toiles
+  ArrayTypeOfPokemons:
+  - TypeIcone: {fileID: 0}
+    typeOfPokemon: 2
+  - TypeIcone: {fileID: 0}
+    typeOfPokemon: 10
+  IconPokemon: {fileID: 0}
+  NumberOfPokemon: 23
+  SkillPokemons:
+  - NameOfSkill: "S\xE9cr\xE9tion"
+    IconeOfSkill: {fileID: 0}
+    ListOfSuccessAndNextCard: []
+  - NameOfSkill: Coup bas
+    IconeOfSkill: {fileID: 0}
+    ListOfSuccessAndNextCard: []
+  - NameOfSkill: Choc Venin
+    IconeOfSkill: {fileID: 0}
+    ListOfSuccessAndNextCard: []
+  PokemonModel3D: {fileID: 7939494359333790676, guid: acdd8dc5bd750b24a8fc198e4310c89b, type: 3}
