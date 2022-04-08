@@ -7,7 +7,7 @@ public class MiaoussMachine : MonoBehaviour
     [SerializeField] MiaoussButton[] _buttons;
 
       #region RéponseUI
-    [SerializeField] GameObject _answerBox;
+    [SerializeField] Canvas _answerBox;
     [SerializeField] TextMeshProUGUI _answerText;
     [SerializeField] string _wrongText;
     [SerializeField] string _textToChange;
@@ -27,7 +27,7 @@ public class MiaoussMachine : MonoBehaviour
             }
 
         }
-          _answerBox.SetActive(true);
+          _answerBox.enabled = true;
         if (AllTrue)
         {
             _answerText.text = _textToChange;
