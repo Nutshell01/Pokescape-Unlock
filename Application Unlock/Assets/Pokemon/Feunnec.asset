@@ -16,9 +16,11 @@ MonoBehaviour:
   NamePokemon: Feunnec
   InfoPokemon: "Un compagnon haut en couleur qui ma\xEEtrise le feu"
   ArrayTypeOfPokemons:
-  - TypeIcone: {fileID: 0}
+  - TypeIcone: {fileID: -4865579590404209085, guid: 6ca0c489a20bcd54092d6cc7fbd537dd, type: 3}
     typeOfPokemon: 0
-  IconPokemon: {fileID: 0}
+  - TypeIcone: {fileID: -4865579590404209085, guid: 6ca0c489a20bcd54092d6cc7fbd537dd, type: 3}
+    typeOfPokemon: 0
+  IconPokemon: {fileID: 3628502738018906311, guid: 53e7056c098425546a48a3eac3db43d3, type: 3}
   NumberOfPokemon: 69
   SkillPokemons:
   - NameOfSkill: "Flamm\xE8che"
@@ -30,4 +32,4 @@ MonoBehaviour:
   - NameOfSkill: Repos
     IconeOfSkill: {fileID: 0}
     ListOfSuccessAndNextCard: []
-  PokemonModel3D: {fileID: 4890908502054906154, guid: c4a41c4adb8856d45aa8e5db2af51708, type: 3}
+  PokemonModel3D: {fileID: 0}
