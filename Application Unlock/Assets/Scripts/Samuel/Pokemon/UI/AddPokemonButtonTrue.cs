@@ -53,7 +53,7 @@ public class AddPokemonButtonTrue : MonoBehaviour
             selectedPokemon.isInTeam = true;
             pokemonTeam.pokemonsInTeam.Add(selectedPokemon);
             pokemonTeam.ShowThePokemonInTeam(selectedPokemon);
-            selectedPokemon.pokemonModel3D = GameObject.Instantiate(selectedPokemon.pokemonModel3D, toto, selectedPokemon.pokemonModel3D.transform.rotation);
+            GameObject.Instantiate(selectedPokemon.pokemonModel3D, toto, selectedPokemon.pokemonModel3D.transform.rotation);
             //desactiver le canvas
             ThisCanvas.enabled = false;
             //spawnPokemon.Poke();
