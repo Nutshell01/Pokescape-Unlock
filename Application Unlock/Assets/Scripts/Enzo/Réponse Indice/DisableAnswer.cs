@@ -7,6 +7,6 @@ public class DisableAnswer : MonoBehaviour
    
     public void Disable()
     {
-        this.gameObject.SetActive(false);
+        gameObject.GetComponent<Canvas>().enabled = false;
     }
 }
