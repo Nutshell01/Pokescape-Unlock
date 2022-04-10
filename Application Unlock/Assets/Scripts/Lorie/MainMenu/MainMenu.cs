@@ -77,4 +77,9 @@ public class MainMenu : MonoBehaviour
         CodeGroup.enabled = true;
     }
 
+    public void QuitApp()
+    {
+
+    }
+
 }
