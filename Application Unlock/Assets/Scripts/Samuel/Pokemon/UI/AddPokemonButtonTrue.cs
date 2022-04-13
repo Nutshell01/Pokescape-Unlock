@@ -14,14 +14,13 @@ public class AddPokemonButtonTrue : MonoBehaviour
     [SerializeField] private Canvas ThisCanvas;
     [SerializeField] private Pokeball pokeball;
     [SerializeField] private GameObject ButtonValide;
+    [SerializeField] private Transform PokemonSpawn;
 
     [SerializeField] private SpawnPokemon spawnPokemon = null;
     //PokemonData selectedPokemon = null;
 
-    private Vector3 toto = new Vector3(0, -0.7f, 4);
-
-    private bool StarterIsAdded;/*
-
+    private bool StarterIsAdded;
+    /*
     void OnGUI()
     {
         InputPokemonNumber.text = Regex.Replace(InputPokemonNumber.text, @"[^0-9 ]", "");
@@ -54,7 +53,7 @@ public class AddPokemonButtonTrue : MonoBehaviour
             selectedPokemon.isInTeam = true;
             pokemonTeam.pokemonsInTeam.Add(selectedPokemon);
             pokemonTeam.ShowThePokemonInTeam(selectedPokemon);
-            GameObject.Instantiate(selectedPokemon.pokemonModel3D, toto, selectedPokemon.pokemonModel3D.transform.rotation);
+            GameObject.Instantiate(selectedPokemon.pokemonModel3D, PokemonSpawn.position, selectedPokemon.pokemonModel3D.transform.rotation);
             //desactiver le canvas
             ThisCanvas.enabled = false;
             //spawnPokemon.Poke();

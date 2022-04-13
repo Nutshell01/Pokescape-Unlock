@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3e372f0cafeaf446b1651fa3ac41494, type: 3}
   m_Name: Bagguiguane
   m_EditorClassIdentifier: 
-  IsInTeam: 0
+  IsInTeam: 1
   NamePokemon: Bagguiguane
   InfoPokemon: 'Baggarreur mais maladroit '
   ArrayTypeOfPokemons:
@@ -25,11 +25,18 @@ MonoBehaviour:
   SkillPokemons:
   - NameOfSkill: Coup d'Boule
     IconeOfSkill: {fileID: 0}
-    ListOfSuccessAndNextCard: []
+    ListOfSuccessAndNextCard:
+    - NbOfSucces: 10
+      NbOfNextCard: 03000000
+    IsEfficaceOnBoss: 0
   - NameOfSkill: Tunnel
     IconeOfSkill: {fileID: 0}
-    ListOfSuccessAndNextCard: []
+    ListOfSuccessAndNextCard:
+    - NbOfSucces: 2
+      NbOfNextCard: 02000000
+    IsEfficaceOnBoss: 1
   - NameOfSkill: "Poing \xE9clair"
     IconeOfSkill: {fileID: 0}
     ListOfSuccessAndNextCard: []
+    IsEfficaceOnBoss: 0
   PokemonModel3D: {fileID: 4052042870297809352, guid: 4c7909ecb7f943943b87a42c71c3d7ee, type: 3}

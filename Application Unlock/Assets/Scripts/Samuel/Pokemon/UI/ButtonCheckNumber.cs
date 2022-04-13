@@ -12,6 +12,7 @@ public class ButtonCheckNumber : MonoBehaviour
     [SerializeField] private Canvas SuccesCanvas;
     [SerializeField] private SuccesCanvas SuccesCanvasScript;
     [SerializeField] private Canvas PenalityCanvas;
+    [SerializeField] private BossManager bossManager;
     
     private SkillPokemon CurrentSkill;
     public SkillPokemon currentSkill { set { CurrentSkill = value; } get { return CurrentSkill; } }
@@ -33,14 +34,23 @@ public class ButtonCheckNumber : MonoBehaviour
             StringBuilder stringBuilder = new StringBuilder();
             if (CurrentSkill.listOfSuccessAndNextCard[i].nbOfSucces == int.Parse(InputNumber.text))
             {
-                SuccesCanvas.enabled = true;
-                for(int j =0; j< CurrentSkill.listOfSuccessAndNextCard[i].nbOfNextCard.Count; j++)
+                if(CurrentSkill.isEfficaceOnBoss == false)
                 {
-                    stringBuilder.Append(CurrentSkill.listOfSuccessAndNextCard[i].nbOfNextCard[j].ToString());
-                    stringBuilder.Append(" ");
+                    SuccesCanvas.enabled = true;
+                    for (int j = 0; j < CurrentSkill.listOfSuccessAndNextCard[i].nbOfNextCard.Count; j++)
+                    {
+                        stringBuilder.Append(CurrentSkill.listOfSuccessAndNextCard[i].nbOfNextCard[j].ToString());
+                        stringBuilder.Append(" ");
+                    }
+                    SuccesCanvasScript.ComputeNbOfCard(stringBuilder.ToString());
+                    return;
                 }
-                SuccesCanvasScript.ComputeNbOfCard(stringBuilder.ToString());
-                return;
+                else
+                {
+                    bossManager.ComputeBossDamage();
+                    return;
+                }
+                
             }
         }
         PenalityCanvas.enabled = true;

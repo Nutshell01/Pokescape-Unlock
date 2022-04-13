@@ -9,11 +9,13 @@ public class SkillPokemon
     [SerializeField] private string NameOfSkill;
     [SerializeField] private Sprite IconeOfSkill;
     [SerializeField] private List<SuccessAndNextCards> ListOfSuccessAndNextCard = new List<SuccessAndNextCards>();
+    [SerializeField] private bool IsEfficaceOnBoss;
 
     public string nameOfSkill => NameOfSkill;
     public Sprite iconeOfSkill => IconeOfSkill;
 
     public List<SuccessAndNextCards> listOfSuccessAndNextCard { get => ListOfSuccessAndNextCard; set => ListOfSuccessAndNextCard = value; }
+    public bool isEfficaceOnBoss { get => IsEfficaceOnBoss;}
 }
 
 [Serializable]
