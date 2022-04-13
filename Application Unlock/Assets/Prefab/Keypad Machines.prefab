@@ -9289,7 +9289,7 @@ PrefabInstance:
     - target: {fileID: 2231589183015741342, guid: 26044494cf01be64b88487c319a89d21, type: 3}
       propertyPath: _answerBox
       value: 
-      objectReference: {fileID: 7572062204770547492}
+      objectReference: {fileID: 6339769117737887553}
     - target: {fileID: 2231589183015741342, guid: 26044494cf01be64b88487c319a89d21, type: 3}
       propertyPath: _answerText
       value: 
@@ -9573,11 +9573,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!223 &7572062204770547492 stripped
-Canvas:
-  m_CorrespondingSourceObject: {fileID: 450676250421679055, guid: 6b20f8aab810f9843a1f869ab9e17e91, type: 3}
-  m_PrefabInstance: {fileID: 8022109256307483883}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8022109256669267503
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9588,7 +9583,7 @@ PrefabInstance:
     - target: {fileID: 251473505349568947, guid: 7d9adfdce3c2fcf428f98ee60981c7fc, type: 3}
       propertyPath: _answerBox
       value: 
-      objectReference: {fileID: 7572062204770547492}
+      objectReference: {fileID: 6339769117737887553}
     - target: {fileID: 251473505349568947, guid: 7d9adfdce3c2fcf428f98ee60981c7fc, type: 3}
       propertyPath: _answerText
       value: 
@@ -9878,7 +9873,7 @@ PrefabInstance:
     - target: {fileID: 3678395223858373609, guid: c2dec1036614a23489cc9ae3aaf78569, type: 3}
       propertyPath: _answerBox
       value: 
-      objectReference: {fileID: 7572062204770547492}
+      objectReference: {fileID: 6339769117737887553}
     - target: {fileID: 3678395223858373609, guid: c2dec1036614a23489cc9ae3aaf78569, type: 3}
       propertyPath: _answerText
       value: 
@@ -10096,7 +10091,7 @@ PrefabInstance:
     - target: {fileID: 8980604582769277179, guid: 23c3e1cca2b59c446a683d623a974811, type: 3}
       propertyPath: _answerBox
       value: 
-      objectReference: {fileID: 7572062204770547492}
+      objectReference: {fileID: 6339769117737887553}
     - target: {fileID: 8980604582769277179, guid: 23c3e1cca2b59c446a683d623a974811, type: 3}
       propertyPath: _answerText
       value: 
@@ -10154,7 +10149,7 @@ PrefabInstance:
     - target: {fileID: 8181302673455727402, guid: 60c91f3970152d84682a98e55cdfcdfd, type: 3}
       propertyPath: _answerBox
       value: 
-      objectReference: {fileID: 7572062204770547492}
+      objectReference: {fileID: 6339769117737887553}
     - target: {fileID: 8181302673455727402, guid: 60c91f3970152d84682a98e55cdfcdfd, type: 3}
       propertyPath: _answerText
       value: 
@@ -10260,7 +10255,7 @@ PrefabInstance:
     - target: {fileID: 1117580632233063840, guid: 12a1f8b6adf1de34e895a888ea492221, type: 3}
       propertyPath: _answerBox
       value: 
-      objectReference: {fileID: 7572062204770547492}
+      objectReference: {fileID: 6339769117737887553}
     - target: {fileID: 1117580632233063840, guid: 12a1f8b6adf1de34e895a888ea492221, type: 3}
       propertyPath: _answerText
       value: 
