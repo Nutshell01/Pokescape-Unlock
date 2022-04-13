@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3e372f0cafeaf446b1651fa3ac41494, type: 3}
   m_Name: Bagguiguane
   m_EditorClassIdentifier: 
-  IsInTeam: 1
+  IsInTeam: 0
   NamePokemon: Bagguiguane
   InfoPokemon: 'Baggarreur mais maladroit '
   ArrayTypeOfPokemons:
-  - TypeIcone: {fileID: 0}
+  - TypeIcone: {fileID: -7238228040663250830, guid: 6ca0c489a20bcd54092d6cc7fbd537dd, type: 3}
     typeOfPokemon: 12
-  - TypeIcone: {fileID: 0}
+  - TypeIcone: {fileID: 2096971806588859455, guid: 6ca0c489a20bcd54092d6cc7fbd537dd, type: 3}
     typeOfPokemon: 11
-  IconPokemon: {fileID: 0}
+  IconPokemon: {fileID: -3463732287345018557, guid: 53e7056c098425546a48a3eac3db43d3, type: 3}
   NumberOfPokemon: 19
   SkillPokemons:
   - NameOfSkill: Coup d'Boule
