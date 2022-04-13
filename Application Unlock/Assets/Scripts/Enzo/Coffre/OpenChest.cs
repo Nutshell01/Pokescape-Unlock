@@ -36,7 +36,7 @@ public class OpenChest : MonoBehaviour
     [Header("Réponse UI")]
 
     #region RéponseUI
-    [SerializeField] Canvas _answerBox;
+    [SerializeField] GameObject _answerBox;
     [SerializeField] TextMeshProUGUI _answerText;
     [SerializeField] string _wrongText;
     [SerializeField] string _textPsytigri;
@@ -110,7 +110,7 @@ public class OpenChest : MonoBehaviour
         else
         {
             _answerText.text = _wrongText;
-            _answerBox.enabled = true;
+            _answerBox.SetActive(true);
         }
     }
     void OpenWithHit()
@@ -122,7 +122,7 @@ public class OpenChest : MonoBehaviour
 
     void Open()
     {
-        _answerBox.enabled = true;
+        _answerBox.SetActive(true);
         _buttonChest.enabled = false;
     }
 

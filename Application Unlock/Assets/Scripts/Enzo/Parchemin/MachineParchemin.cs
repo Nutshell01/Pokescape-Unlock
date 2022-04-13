@@ -9,7 +9,7 @@ public class MachineParchemin : MonoBehaviour
     [HideInInspector] public string _currentGood;
     
       #region RéponseUI
-    [SerializeField] Canvas _answerBox;
+    [SerializeField] GameObject _answerBox;
     [SerializeField] TextMeshProUGUI _answerText;
     [SerializeField] string _wrongText;
     [SerializeField] string _textToChange;
@@ -35,14 +35,14 @@ public class MachineParchemin : MonoBehaviour
             _count = -1;
             _currentGood = "";
             _currentCombinaison = "";
-            _answerBox.enabled = true;
+            _answerBox.SetActive(true);
             _answerText.text = _wrongText;
         }
         if (_count == 9)
         {
             if (_currentCombinaison == _currentGood)
             {
-                _answerBox.enabled = true;
+                _answerBox.SetActive(true);
                 GetComponent<Canvas>().enabled = false;
                 _answerText.text = _textToChange;
                 // _count = -1;
