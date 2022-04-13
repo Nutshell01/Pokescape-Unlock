@@ -11,7 +11,7 @@ public class LampeSale : MonoBehaviour
     private bool _isClean;
 
      #region RéponseUI
-    [SerializeField] Canvas _answerBox;
+    [SerializeField] GameObject _answerBox;
     [SerializeField] TextMeshProUGUI _answerText;
     [SerializeField] string _wrongText;
     [SerializeField] string _textToChange;
@@ -36,7 +36,7 @@ public class LampeSale : MonoBehaviour
     public void Victory()
     {
         _lampButton.enabled = false;
-        _answerBox.enabled = false;
+        _answerBox.SetActive(false);
         _answerText.text = _textToChange;
         
     }

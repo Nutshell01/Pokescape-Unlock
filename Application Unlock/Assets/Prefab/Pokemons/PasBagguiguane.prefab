@@ -1031,7 +1031,7 @@ GameObject:
   - component: {fileID: 3263680414350058113}
   m_Layer: 0
   m_Name: PasBagguiguane
-  m_TagString: Untagged
+  m_TagString: Pokemon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
