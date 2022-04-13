@@ -6,29 +6,30 @@ using System.Text.RegularExpressions; // needed for Regex
 
 public class AddPokemonButtonTrue : MonoBehaviour
 {
-    [SerializeField] private TMP_InputField InputPokemonNumber;
+    [SerializeField] private PokemonCatchKeypad pokemonCatchKeypad;
     [SerializeField] private PokemonTeam pokemonTeam;
     [SerializeField] private Pokedex pokedex;
     [SerializeField] private StarterManager starterManager;
     [SerializeField] private Canvas UIPenality;
     [SerializeField] private Canvas ThisCanvas;
     [SerializeField] private Pokeball pokeball;
+    [SerializeField] private GameObject ButtonValide;
 
     [SerializeField] private SpawnPokemon spawnPokemon = null;
     //PokemonData selectedPokemon = null;
 
     private Vector3 toto = new Vector3(0, -0.7f, 4);
 
-    private bool StarterIsAdded;
+    private bool StarterIsAdded;/*
 
     void OnGUI()
     {
         InputPokemonNumber.text = Regex.Replace(InputPokemonNumber.text, @"[^0-9 ]", "");
-    }
+    }*/
 
     private void Awake()
     {
-        UnityEngine.UI.Button b = gameObject.GetComponent<UnityEngine.UI.Button>();
+        UnityEngine.UI.Button b = ButtonValide.GetComponent<UnityEngine.UI.Button>();
         b.onClick.AddListener(CheckAndAddPokemon);
     }
 
@@ -38,7 +39,7 @@ public class AddPokemonButtonTrue : MonoBehaviour
         for(int i = 0; i < pokedex.pokemonInThePokedex.Count; i++)
         {
             PokemonData p = pokedex.pokemonInThePokedex[i];
-            if (int.Parse(InputPokemonNumber.text) == p.numberOfPokemon && p.isInTeam == false)
+            if (pokemonCatchKeypad.GetOutputValue() == p.numberOfPokemon && p.isInTeam == false)
             {
                 selectedPokemon = p;
                 break;
