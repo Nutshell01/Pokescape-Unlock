@@ -8177,6 +8177,22 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2345964894294282769, guid: 07f8550fbfe939d4582960e70e1d3d70, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9762ec40aab53bb4b9748b697adea2e0, type: 3}
+    - target: {fileID: 2345964894294282769, guid: 07f8550fbfe939d4582960e70e1d3d70, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2345964894294282769, guid: 07f8550fbfe939d4582960e70e1d3d70, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2345964894294282769, guid: 07f8550fbfe939d4582960e70e1d3d70, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2345964894294282771, guid: 07f8550fbfe939d4582960e70e1d3d70, type: 3}
       propertyPath: _wrongText
       value: Non !
