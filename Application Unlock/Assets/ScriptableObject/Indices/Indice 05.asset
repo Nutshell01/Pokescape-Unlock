@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _indiceNumber: 5
   _firstIndice: 'Essayez de former un symbole '
-  _secondIndice: "Demandez \xE0 Bagguiguane/Psytigri (selon le starter choisi)de
-    lancer l\u2019attaque Tunnel/L\xE9vikin\xE9sie."
+  _secondIndice: "Demandez \xE0 Ptola/Hori (selon le starter choisi)de lancer l\u2019attaque
+    Tunnel/L\xE9vikin\xE9sie."
   _usefulness: 1
