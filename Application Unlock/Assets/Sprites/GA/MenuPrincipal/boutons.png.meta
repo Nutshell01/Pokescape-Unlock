@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 253af72c30d6ddd44ace96d02967316e
+guid: 24fcc58b933cded419129449fbc5f0bb
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -29,6 +29,15 @@ TextureImporter:
   - first:
       213: 2296792133674398177
     second: boutons_8
+  - first:
+      213: -8414555577000013175
+    second: boutons_9
+  - first:
+      213: 58465956482638172
+    second: boutons_10
+  - first:
+      213: 6111527900992512705
+    second: boutons_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -145,8 +154,8 @@ TextureImporter:
       name: boutons_0
       rect:
         serializedVersion: 2
-        x: 101
-        y: 311
+        x: 102
+        y: 377
         width: 103
         height: 109
       alignment: 0
@@ -166,8 +175,8 @@ TextureImporter:
       name: boutons_1
       rect:
         serializedVersion: 2
-        x: 227
-        y: 309
+        x: 228
+        y: 375
         width: 103
         height: 109
       alignment: 0
@@ -187,8 +196,8 @@ TextureImporter:
       name: boutons_2
       rect:
         serializedVersion: 2
-        x: 348
-        y: 311
+        x: 349
+        y: 377
         width: 103
         height: 109
       alignment: 0
@@ -208,8 +217,8 @@ TextureImporter:
       name: boutons_3
       rect:
         serializedVersion: 2
-        x: 100
-        y: 189
+        x: 101
+        y: 255
         width: 103
         height: 109
       alignment: 0
@@ -229,8 +238,8 @@ TextureImporter:
       name: boutons_4
       rect:
         serializedVersion: 2
-        x: 227
-        y: 189
+        x: 228
+        y: 255
         width: 103
         height: 109
       alignment: 0
@@ -250,8 +259,8 @@ TextureImporter:
       name: boutons_5
       rect:
         serializedVersion: 2
-        x: 348
-        y: 187
+        x: 349
+        y: 253
         width: 103
         height: 109
       alignment: 0
@@ -271,8 +280,8 @@ TextureImporter:
       name: boutons_6
       rect:
         serializedVersion: 2
-        x: 101
-        y: 69
+        x: 102
+        y: 135
         width: 103
         height: 109
       alignment: 0
@@ -292,8 +301,8 @@ TextureImporter:
       name: boutons_7
       rect:
         serializedVersion: 2
-        x: 227
-        y: 69
+        x: 228
+        y: 135
         width: 103
         height: 109
       alignment: 0
@@ -313,8 +322,8 @@ TextureImporter:
       name: boutons_8
       rect:
         serializedVersion: 2
-        x: 352
-        y: 69
+        x: 353
+        y: 135
         width: 103
         height: 109
       alignment: 0
@@ -326,6 +335,69 @@ TextureImporter:
       bones: []
       spriteID: 1e1f292d648dfdf10800000000000000
       internalID: 2296792133674398177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boutons_9
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 17
+        width: 103
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 982d122f84e793b80800000000000000
+      internalID: -8414555577000013175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boutons_10
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 17
+        width: 103
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c51e9974a76bfc000800000000000000
+      internalID: 58465956482638172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boutons_11
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 17
+        width: 103
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c22c85ee3280d450800000000000000
+      internalID: 6111527900992512705
       vertices: []
       indices: 
       edges: []
