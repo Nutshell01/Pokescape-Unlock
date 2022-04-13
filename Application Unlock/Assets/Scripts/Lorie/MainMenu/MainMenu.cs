@@ -23,7 +23,7 @@ public class MainMenu : MonoBehaviour
     public Canvas TeamCanvas;
     public Canvas ClavierIndices;
     public Canvas PokedexCanvas;
-    public Canvas CodeGroup;
+    public Canvas MachineCanvas;
 
 
     private void Start()
@@ -74,7 +74,7 @@ public class MainMenu : MonoBehaviour
 
     public void MachineClick()
     {
-        CodeGroup.enabled = true;
+        MachineCanvas.enabled = true;
     }
 
     public void QuitApp()
