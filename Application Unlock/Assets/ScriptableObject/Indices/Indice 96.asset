@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _indiceNumber: 96
   _firstIndice: Ces statues ressemblent aux tatouage des Mackogneurs.
-  _secondIndice: "Rangez les statues dans cet ordres (visuel) droite, haut, bas,
-    gauche\r.\n"
+  _secondIndice: 'Rangez les statues dans cet ordres Nord, Sud, Est, Ouest
+
+'
   _usefulness: 1
