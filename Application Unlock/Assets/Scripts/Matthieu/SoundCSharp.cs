@@ -25,7 +25,7 @@ public class SoundCSharp : MonoBehaviour
         if(audioSource!=null)
         {
             audioSource.Play();
-            if(audioSource.outputAudioMixerGroup!=null) Debug.Log ("Missing assigned audio mixer at " + audioSource + " audioSource !");
+            if(audioSource.outputAudioMixerGroup==null) Debug.Log("Missing assigned audio mixer at " + audioSource + " audioSource !");
         }
         else Debug.Log("Missing audio source !!!");
     }
@@ -68,7 +68,7 @@ public class SoundCSharp : MonoBehaviour
     }
     public void PlayAudioSPokeballWobble()
     {
-        PlaySound(audioButton);
+        PlaySound(audioPokeballWobble);
     }
     public void PlayAudioSPokeballLand()
     {

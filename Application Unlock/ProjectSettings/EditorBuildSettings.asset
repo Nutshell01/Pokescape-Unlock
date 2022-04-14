@@ -5,19 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Theo/Theo.unity
     guid: 621c79726ac5f5e4482cc659df39e0c2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Samuel/Origin Samuel MainMenu.unity
     guid: 309a49c13a26ce349ab2812ee3506d86
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Theo/Pokeflute.unity
     guid: 0aed6660bd0327a4b8d5adef9ae1eec8
   - enabled: 0
-    path: Assets/Scenes/Samuel/MainMenu Samuel.unity
-    guid: 00fe820b73f70b14da761d65bc2ad60c
-  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/Scenes/Samuel/Team.unity
     guid: a253d381736e51f41a52fe44b7f72d2e
+  - enabled: 1
+    path: Assets/Scenes/cfgv.unity
+    guid: f8c0246f90b3f4140b354051b5c1f959
   m_configObjects: {}
