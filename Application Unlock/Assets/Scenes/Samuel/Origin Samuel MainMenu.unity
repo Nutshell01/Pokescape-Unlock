@@ -1342,15 +1342,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1672659284626803089, guid: 2f835fd53de586446982f43ce2bedbcd, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1672659284626803089, guid: 2f835fd53de586446982f43ce2bedbcd, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1672659284626803089, guid: 2f835fd53de586446982f43ce2bedbcd, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -281.9889
+      value: 775
       objectReference: {fileID: 0}
     - target: {fileID: 1672659284626803089, guid: 2f835fd53de586446982f43ce2bedbcd, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1374,7 +1374,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1721404867101112243, guid: 2f835fd53de586446982f43ce2bedbcd, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2615806267913009080, guid: 2f835fd53de586446982f43ce2bedbcd, type: 3}
       propertyPath: m_ChildAlignment
@@ -4055,11 +4055,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6550593120268172863, guid: 2f835fd53de586446982f43ce2bedbcd, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 870.307
+      value: 980.093
       objectReference: {fileID: 0}
     - target: {fileID: 6550593120268172863, guid: 2f835fd53de586446982f43ce2bedbcd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -364.592
+      value: -419.486
+      objectReference: {fileID: 0}
+    - target: {fileID: 7532561893783941572, guid: 2f835fd53de586446982f43ce2bedbcd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7657528852068187266, guid: 2f835fd53de586446982f43ce2bedbcd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
