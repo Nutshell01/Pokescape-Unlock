@@ -148,6 +148,7 @@ MonoBehaviour:
   _textSpacing4digits: 50
   _textSpacing2digits: 100
   _screenText: {fileID: 0}
+  machineManager: {fileID: 0}
 --- !u!114 &3923366167061440475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,6 +174,7 @@ MonoBehaviour:
   - {fileID: 8028854455019126046}
   - {fileID: 8022109257384719157}
   - {fileID: 8022109257030283149}
+  dialogChoice: {fileID: 0}
 --- !u!1 &1690256875051969760
 GameObject:
   m_ObjectHideFlags: 0
@@ -6435,7 +6437,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5754135197757666798, guid: 55cb773a76b539543a33045b76ecff71, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 964.6
+      value: 900
       objectReference: {fileID: 0}
     - target: {fileID: 5754135197757666798, guid: 55cb773a76b539543a33045b76ecff71, type: 3}
       propertyPath: m_SizeDelta.y
