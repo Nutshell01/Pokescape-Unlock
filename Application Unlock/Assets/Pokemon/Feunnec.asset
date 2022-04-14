@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3e372f0cafeaf446b1651fa3ac41494, type: 3}
   m_Name: Feunnec
   m_EditorClassIdentifier: 
-  IsInTeam: 0
+  IsInTeam: 1
   NamePokemon: Feunnec
   InfoPokemon: "Un compagnon haut en couleur qui ma\xEEtrise le feu"
   ArrayTypeOfPokemons:
@@ -26,10 +26,13 @@ MonoBehaviour:
   - NameOfSkill: "Flamm\xE8che"
     IconeOfSkill: {fileID: 0}
     ListOfSuccessAndNextCard: []
+    IsEfficaceOnBoss: 0
   - NameOfSkill: Toxik
     IconeOfSkill: {fileID: 0}
     ListOfSuccessAndNextCard: []
+    IsEfficaceOnBoss: 0
   - NameOfSkill: Repos
     IconeOfSkill: {fileID: 0}
     ListOfSuccessAndNextCard: []
-  PokemonModel3D: {fileID: 0}
+    IsEfficaceOnBoss: 0
+  PokemonModel3D: {fileID: 4890908502054906154, guid: c4a41c4adb8856d45aa8e5db2af51708, type: 3}

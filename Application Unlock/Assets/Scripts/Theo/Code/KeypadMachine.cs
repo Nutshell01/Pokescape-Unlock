@@ -11,6 +11,7 @@ public class KeypadMachine : MonoBehaviour
     [SerializeField] float _textSpacing4digits;
     [SerializeField] float _textSpacing2digits;
     [SerializeField] TextMeshProUGUI _screenText;
+    [SerializeField] private MachineManager machineManager;
     private int _outputValue;
 
 
@@ -48,6 +49,8 @@ public class KeypadMachine : MonoBehaviour
                 _input = "";
                 _buttonPressed = 0;
                 _screenText.text = _input.ToString();
+                if(machineManager != null)
+                machineManager.CheckCode(_outputValue);
                 break;
 
             case "C":

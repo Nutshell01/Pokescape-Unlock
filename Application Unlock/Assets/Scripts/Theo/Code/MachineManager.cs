@@ -20,9 +20,9 @@ public class MachineManager : MonoBehaviour
         errorMachine.enabled = false;
     }
 
-    public void CheckCode()
+    public void CheckCode(int value)
     {
-        codeToCheck = keypadScript.GetOutputValue();
+        codeToCheck = value;
 
         if (!codesMachines.Contains(codeToCheck)) //Si le code n'est pas dans la liste => invalide
         {
