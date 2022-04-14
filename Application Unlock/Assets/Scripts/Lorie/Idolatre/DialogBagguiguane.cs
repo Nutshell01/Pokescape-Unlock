@@ -12,8 +12,10 @@ public class DialogBagguiguane : MonoBehaviour
 
     public GameObject continueButton;
 
-    void Start()
+    void OnEnable()
     {
+        index = 0;
+        textDisplay.text = "";
         StartCoroutine(Type());
     }
 

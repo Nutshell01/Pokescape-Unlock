@@ -52,7 +52,7 @@ public class PokemonCatchKeypad : MonoBehaviour
                 _input = "";
                 _buttonPressed = 0;
                 _screenText.text = _input.ToString();
-                _clavierCanvas.SetActive(false);
+                _clavierCanvas.GetComponent<Canvas>().enabled = false;
 
                 break;
 

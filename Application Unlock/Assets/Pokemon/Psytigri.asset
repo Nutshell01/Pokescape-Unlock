@@ -17,18 +17,23 @@ MonoBehaviour:
   InfoPokemon: "Un f\xE9lin extr\xEAmement mignon poss\xE9dant une immense force
     psychique"
   ArrayTypeOfPokemons:
-  - TypeIcone: {fileID: 0}
+  - TypeIcone: {fileID: 4296580624969805126, guid: 6ca0c489a20bcd54092d6cc7fbd537dd, type: 3}
     typeOfPokemon: 3
-  IconPokemon: {fileID: 0}
+  - TypeIcone: {fileID: -7732972019014282636, guid: 6ca0c489a20bcd54092d6cc7fbd537dd, type: 3}
+    typeOfPokemon: 11
+  IconPokemon: {fileID: 21300000, guid: 557b38e577dc7bf448384454b17b3e8c, type: 3}
   NumberOfPokemon: 20
   SkillPokemons:
   - NameOfSkill: "L\xE9vikin\xE9sie"
-    IconeOfSkill: {fileID: 0}
+    IconeOfSkill: {fileID: 21300000, guid: 49c118e2b1db5e54a93c3a495f79da8c, type: 3}
     ListOfSuccessAndNextCard: []
+    IsEfficaceOnBoss: 0
   - NameOfSkill: Tonnerre
-    IconeOfSkill: {fileID: 0}
+    IconeOfSkill: {fileID: 21300000, guid: 45d5e621e1d8eb0489d7ff8d0131811a, type: 3}
     ListOfSuccessAndNextCard: []
+    IsEfficaceOnBoss: 0
   - NameOfSkill: Psykoud'Boul
-    IconeOfSkill: {fileID: 0}
+    IconeOfSkill: {fileID: 21300000, guid: 4091e586479f11a4eb5583d1e8a01728, type: 3}
     ListOfSuccessAndNextCard: []
+    IsEfficaceOnBoss: 0
   PokemonModel3D: {fileID: 5339351608433493341, guid: ab1b72455ce085c49bf6cfe4b289769e, type: 3}

@@ -12,6 +12,6 @@ public class ButtonAddPokemon : MonoBehaviour
     }
     private void OpenCanvas()
     {
-        CanvasToOpen.enabled = true;
+        CanvasToOpen.enabled = !CanvasToOpen.enabled;
     }
 }

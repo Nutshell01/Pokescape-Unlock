@@ -16,5 +16,5 @@ MonoBehaviour:
   _firstIndice: "La latitude correspond a un chiffre rouge et la longitude \xE0 un
     chiffre noir."
   _secondIndice: "Le chiffre rouge est donn\xE9 par Mr.Mime et le chiffre noir est
-    donn\xE9 par le papier crach\xE9 par Rongourmand, ce qui donne le code 3556.\n"
+    d\xE9j\xE0 indiqu\xE9 sur la carte, placez le slider rouge sur le nombre correspondant\n"
   _usefulness: 1

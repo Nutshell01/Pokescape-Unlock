@@ -16,20 +16,23 @@ MonoBehaviour:
   NamePokemon: Mimigal
   InfoPokemon: Un petit insecte qui tisse des toiles
   ArrayTypeOfPokemons:
-  - TypeIcone: {fileID: 0}
+  - TypeIcone: {fileID: 4753904460685988725, guid: 6ca0c489a20bcd54092d6cc7fbd537dd, type: 3}
     typeOfPokemon: 2
-  - TypeIcone: {fileID: 0}
+  - TypeIcone: {fileID: 2030407704747763644, guid: 6ca0c489a20bcd54092d6cc7fbd537dd, type: 3}
     typeOfPokemon: 10
   IconPokemon: {fileID: 0}
   NumberOfPokemon: 23
   SkillPokemons:
   - NameOfSkill: "S\xE9cr\xE9tion"
-    IconeOfSkill: {fileID: 0}
+    IconeOfSkill: {fileID: 21300000, guid: e5cb9d40f64aee740b8ffe80155d4bc6, type: 3}
     ListOfSuccessAndNextCard: []
+    IsEfficaceOnBoss: 0
   - NameOfSkill: Coup bas
-    IconeOfSkill: {fileID: 0}
+    IconeOfSkill: {fileID: 21300000, guid: 05b415a00f7bca9408f9cccc09a5db13, type: 3}
     ListOfSuccessAndNextCard: []
+    IsEfficaceOnBoss: 0
   - NameOfSkill: Choc Venin
-    IconeOfSkill: {fileID: 0}
+    IconeOfSkill: {fileID: 21300000, guid: 317b0d4f2515fc14fbc89eb6472075c8, type: 3}
     ListOfSuccessAndNextCard: []
+    IsEfficaceOnBoss: 0
   PokemonModel3D: {fileID: 7939494359333790676, guid: acdd8dc5bd750b24a8fc198e4310c89b, type: 3}

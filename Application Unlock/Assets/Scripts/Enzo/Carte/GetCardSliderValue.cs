@@ -14,7 +14,12 @@ public class GetCardSliderValue : MonoBehaviour
     [SerializeField] GameObject _answerBox;
     [SerializeField] TextMeshProUGUI _answerText;
     [SerializeField] string _wrongText;
-    [SerializeField] string _textToChange;
+    [SerializeField] string _TextPsytigri;
+    [SerializeField] string _TextBaggiguanne;
+    [SerializeField] StarterManager starterManager = null;
+
+    private bool _isPsytigri;
+    
     #endregion
     void Start()
     {
@@ -34,14 +39,33 @@ public class GetCardSliderValue : MonoBehaviour
     {
         _answerBox.SetActive(true);
 
-        if(GetSliderValue(_longitudeSlider) == _valueLongitude && GetSliderValue(_latitudeSlider) == _valueLatitude)
+        if(GetSliderValue(_longitudeSlider) == _valueLongitude && (GetSliderValue(_latitudeSlider) >= 50 && GetSliderValue(_latitudeSlider) <= 60)) //== _valueLatitude
         {
-           _answerText.text = _textToChange;
+
+            if(_isPsytigri)
+           _answerText.text = _TextPsytigri;
+           else
+           _answerText.text =  _TextBaggiguanne;
         }
         else
         {
             _answerText.text = _wrongText;
         }
     }
+void GetStarter()
+{
+    
+     if (starterManager.currentStarter.name == "Psytigri")
+        {
+           
+            _isPsytigri = true;
+        }
+
+        else if (starterManager.currentStarter.name == "Bagguiguane")
+        {
+            _isPsytigri = false;
+
+        }
+}
     
 }

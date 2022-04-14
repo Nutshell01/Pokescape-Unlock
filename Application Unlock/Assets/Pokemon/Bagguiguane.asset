@@ -16,20 +16,27 @@ MonoBehaviour:
   NamePokemon: Bagguiguane
   InfoPokemon: 'Baggarreur mais maladroit '
   ArrayTypeOfPokemons:
-  - TypeIcone: {fileID: 0}
+  - TypeIcone: {fileID: -1997854589117139384, guid: 6ca0c489a20bcd54092d6cc7fbd537dd, type: 3}
     typeOfPokemon: 12
-  - TypeIcone: {fileID: 0}
+  - TypeIcone: {fileID: -7732972019014282636, guid: 6ca0c489a20bcd54092d6cc7fbd537dd, type: 3}
     typeOfPokemon: 11
-  IconPokemon: {fileID: 0}
+  IconPokemon: {fileID: 21300000, guid: c8fa7c3fdbca7204ca18fa79965eaab7, type: 3}
   NumberOfPokemon: 19
   SkillPokemons:
   - NameOfSkill: Coup d'Boule
-    IconeOfSkill: {fileID: 0}
-    ListOfSuccessAndNextCard: []
+    IconeOfSkill: {fileID: 21300000, guid: 8c5b4a4ed8d74e14e835cb2a6c791877, type: 3}
+    ListOfSuccessAndNextCard:
+    - NbOfSucces: 10
+      NbOfNextCard: 03000000
+    IsEfficaceOnBoss: 0
   - NameOfSkill: Tunnel
-    IconeOfSkill: {fileID: 0}
-    ListOfSuccessAndNextCard: []
+    IconeOfSkill: {fileID: 21300000, guid: b2c1c181e23cd6347a316a154cb6d9cf, type: 3}
+    ListOfSuccessAndNextCard:
+    - NbOfSucces: 2
+      NbOfNextCard: 02000000
+    IsEfficaceOnBoss: 1
   - NameOfSkill: "Poing \xE9clair"
-    IconeOfSkill: {fileID: 0}
+    IconeOfSkill: {fileID: 21300000, guid: 51b5c376809f1f3469d86483762fd95e, type: 3}
     ListOfSuccessAndNextCard: []
+    IsEfficaceOnBoss: 0
   PokemonModel3D: {fileID: 4052042870297809352, guid: 4c7909ecb7f943943b87a42c71c3d7ee, type: 3}
