@@ -39,7 +39,7 @@ public class GetCardSliderValue : MonoBehaviour
     {
         _answerBox.SetActive(true);
 
-        if(GetSliderValue(_longitudeSlider) == _valueLongitude && GetSliderValue(_latitudeSlider) == _valueLatitude)
+        if(GetSliderValue(_longitudeSlider) == _valueLongitude && (GetSliderValue(_latitudeSlider) >= 50 && GetSliderValue(_latitudeSlider) <= 60)) //== _valueLatitude
         {
 
             if(_isPsytigri)
