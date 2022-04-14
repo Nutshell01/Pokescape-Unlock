@@ -20,19 +20,19 @@ MonoBehaviour:
     typeOfPokemon: 0
   - TypeIcone: {fileID: -4865579590404209085, guid: 6ca0c489a20bcd54092d6cc7fbd537dd, type: 3}
     typeOfPokemon: 0
-  IconPokemon: {fileID: 3628502738018906311, guid: 53e7056c098425546a48a3eac3db43d3, type: 3}
+  IconPokemon: {fileID: 21300000, guid: c9d462bf1a53761439d5a78d7cdab17b, type: 3}
   NumberOfPokemon: 69
   SkillPokemons:
   - NameOfSkill: "Flamm\xE8che"
-    IconeOfSkill: {fileID: 0}
+    IconeOfSkill: {fileID: 21300000, guid: 2444f23af426a2c4f9bd39805245e1df, type: 3}
     ListOfSuccessAndNextCard: []
     IsEfficaceOnBoss: 0
   - NameOfSkill: Toxik
-    IconeOfSkill: {fileID: 0}
+    IconeOfSkill: {fileID: 21300000, guid: 1a6037afd8998fe4b9ac163bdab53c7a, type: 3}
     ListOfSuccessAndNextCard: []
     IsEfficaceOnBoss: 0
   - NameOfSkill: Repos
-    IconeOfSkill: {fileID: 0}
+    IconeOfSkill: {fileID: 21300000, guid: 4cfce8a81b776474aa513ed675d2c077, type: 3}
     ListOfSuccessAndNextCard: []
     IsEfficaceOnBoss: 0
   PokemonModel3D: {fileID: 4890908502054906154, guid: c4a41c4adb8856d45aa8e5db2af51708, type: 3}

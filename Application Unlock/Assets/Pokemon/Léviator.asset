@@ -12,25 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3e372f0cafeaf446b1651fa3ac41494, type: 3}
   m_Name: "L\xE9viator"
   m_EditorClassIdentifier: 
-  IsInTeam: 0
+  IsInTeam: 1
   NamePokemon: "L\xE9viator"
   InfoPokemon: "Un puissant pok\xE9mon qui peut se d\xE9placer \xE0 la fois dans
     l'eau  et sur la terre"
   ArrayTypeOfPokemons:
-  - TypeIcone: {fileID: 0}
+  - TypeIcone: {fileID: 8545817472167436353, guid: 6ca0c489a20bcd54092d6cc7fbd537dd, type: 3}
     typeOfPokemon: 9
-  - TypeIcone: {fileID: 0}
+  - TypeIcone: {fileID: 3757494867380126327, guid: 6ca0c489a20bcd54092d6cc7fbd537dd, type: 3}
     typeOfPokemon: 15
-  IconPokemon: {fileID: 0}
+  IconPokemon: {fileID: 21300000, guid: 71a1a7c9bfb57184290cb174d288f2ce, type: 3}
   NumberOfPokemon: 88
   SkillPokemons:
   - NameOfSkill: Surf
-    IconeOfSkill: {fileID: 0}
+    IconeOfSkill: {fileID: 21300000, guid: 6ec715f505e0f2a4aabe04d7eb60c735, type: 3}
     ListOfSuccessAndNextCard: []
+    IsEfficaceOnBoss: 0
   - NameOfSkill: Hydrocanon
-    IconeOfSkill: {fileID: 0}
+    IconeOfSkill: {fileID: 21300000, guid: 786fbdd696361594aa9b3f3a7e964228, type: 3}
     ListOfSuccessAndNextCard: []
+    IsEfficaceOnBoss: 0
   - NameOfSkill: "S\xE9isme"
-    IconeOfSkill: {fileID: 0}
+    IconeOfSkill: {fileID: 21300000, guid: 4649e6e4f54fb634d96ff0a2e412c8ba, type: 3}
     ListOfSuccessAndNextCard: []
+    IsEfficaceOnBoss: 0
   PokemonModel3D: {fileID: 9075360895251696514, guid: fd97c23958c013744a033f05593c2c14, type: 3}
