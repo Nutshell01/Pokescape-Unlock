@@ -7,7 +7,8 @@ public class DialogChoice : MonoBehaviour
     public GameObject Psytigri;
     public GameObject Bagguiguane;
     [SerializeField] private StarterManager starterManager = null;
-    private void Update()
+  
+    public void CheckStarter()
     {
         if (starterManager.currentStarter.name == "Psytigri")
         {

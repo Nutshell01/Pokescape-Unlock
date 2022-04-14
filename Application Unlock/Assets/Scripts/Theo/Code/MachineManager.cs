@@ -12,6 +12,7 @@ public class MachineManager : MonoBehaviour
     [Space, Header("Codes & machines")]
     [SerializeField] private List<int> codesMachines = new List<int>(); //Liste de tout les codes pour appeler les machine
     [SerializeField] private List<GameObject> machines = new List<GameObject>(); //Les prefabs des machines
+    [SerializeField] private DialogChoice dialogChoice;
 
     private int codeToCheck = 0;
 
@@ -53,7 +54,11 @@ public class MachineManager : MonoBehaviour
 
     public void DisplayMachine(int _index)
     {
-        machines[_index].SetActive(true);  
+        machines[_index].SetActive(true);
+        if(_index == 11 || _index == 10)
+        {
+            dialogChoice.CheckStarter();
+        }
     }
 
 }

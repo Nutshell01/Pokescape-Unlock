@@ -14,6 +14,8 @@ public class DialogPsytigri : MonoBehaviour
 
     void Start()
     {
+        index = 0;
+        textDisplay.text = "";
         StartCoroutine(Type());
     }
 
