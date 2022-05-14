@@ -41,6 +41,7 @@ public class OpenChest : MonoBehaviour
     [SerializeField] string _wrongText;
     [SerializeField] string _textPsytigri;
     [SerializeField] string _textBaggiguane;
+    [SerializeField] GameObject _ContinueButton;
 
     #endregion
 
@@ -123,6 +124,7 @@ public class OpenChest : MonoBehaviour
     void Open()
     {
         _answerBox.SetActive(true);
+        _ContinueButton.SetActive(true);
         _buttonChest.enabled = false;
     }
 

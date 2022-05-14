@@ -16,6 +16,11 @@ public class MachineManager : MonoBehaviour
 
     private int codeToCheck = 0;
 
+    #region ToMain Fix
+    [SerializeField] DisableAnswer _disableScript;
+    #endregion
+  
+
     private void Awake()
     {
         errorMachine.enabled = false;
@@ -55,6 +60,7 @@ public class MachineManager : MonoBehaviour
     public void DisplayMachine(int _index)
     {
         machines[_index].SetActive(true);
+        _disableScript._CurrentMachine = machines[_index];
         if(_index == 11 || _index == 10)
         {
             dialogChoice.CheckStarter();

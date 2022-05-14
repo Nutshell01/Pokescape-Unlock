@@ -17,6 +17,7 @@ public class GetCardSliderValue : MonoBehaviour
     [SerializeField] string _TextPsytigri;
     [SerializeField] string _TextBaggiguanne;
     [SerializeField] StarterManager starterManager = null;
+    [SerializeField] GameObject _ContinueButton;
 
     private bool _isPsytigri;
     
@@ -46,10 +47,12 @@ public class GetCardSliderValue : MonoBehaviour
            _answerText.text = _TextPsytigri;
            else
            _answerText.text =  _TextBaggiguanne;
+           _ContinueButton.SetActive(true);
         }
         else
         {
             _answerText.text = _wrongText;
+            _ContinueButton.SetActive(false);
         }
     }
 void GetStarter()
