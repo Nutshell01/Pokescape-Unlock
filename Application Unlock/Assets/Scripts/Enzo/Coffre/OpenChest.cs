@@ -45,34 +45,43 @@ public class OpenChest : MonoBehaviour
 
     #endregion
 
+    [SerializeField] GameManager _gameManager;
+    [SerializeField] StarterManager starterManager;
+
     void OnGUI()
     {
         _inputChest.text = Regex.Replace(_inputChest.text, @"[^0-9 ]", "");
     }
     // Start is called before the first frame update
-    void Start()
+  
+    // Update is called once per frame
+    void Update()
     {
-        if (_isPsytigri)
+        //check quel starter (a faire dans une fonction pour eviter de devoir le faire en boucle ??)
+
+        if (starterManager.currentStarter.name == "Psytigri")
+        {
+            _isPsytigri = true;
+        }
+        else if (starterManager.currentStarter.name == "Bagguiguane")
+        {
+            _isPsytigri = false;
+        }
+
+        if (_isPsytigri == true)
         {
             _clavierKey.SetActive(true);
             _buttonChest.enabled = false;
             _buttonKey.SetActive(true);
 
         }
-        else
+        else if (_isPsytigri == false)
         {
             _clavierKey.SetActive(false);
             _buttonChest.enabled = true;
             _buttonKey.SetActive(false);
 
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //check quel starter (a faire dans une fonction pour eviter de devoir le faire en boucle ??)
-
 
         if (_currentCount == _countToDestroy)
         {
