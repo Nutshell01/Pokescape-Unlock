@@ -9,6 +9,8 @@ public class DialogBagguiguane : MonoBehaviour
     public string[] sentences;
     private int index;
     public float typingSpeed;
+    public GameObject Fond;
+    public GameObject CarteDrop;
 
     public GameObject continueButton;
 
@@ -59,6 +61,8 @@ public class DialogBagguiguane : MonoBehaviour
         {
             textDisplay.text = "";
             continueButton.SetActive(false);
+            Fond.SetActive(false);
+            CarteDrop.SetActive(true);
 
         }
     }
