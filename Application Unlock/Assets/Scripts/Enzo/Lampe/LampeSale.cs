@@ -10,18 +10,20 @@ public class LampeSale : MonoBehaviour
     [SerializeField] Button _lampButton;
     private bool _isClean;
 
-     #region RéponseUI
+    #region RéponseUI
     [SerializeField] GameObject _answerBox;
     [SerializeField] TextMeshProUGUI _answerText;
-    [SerializeField] string _wrongText;
+
     [SerializeField] string _textToChange;
-    
+
     #endregion
-   
+
+    [SerializeField] GameObject _ContinueButton;
+
     void Update()
-    {    
-         
-        if(_cleanness <= 0)
+    {
+
+        if (_cleanness <= 0)
         {
             Victory();
             _cleanness = 100;
@@ -36,8 +38,9 @@ public class LampeSale : MonoBehaviour
     public void Victory()
     {
         _lampButton.enabled = false;
-        _answerBox.SetActive(false);
+        _answerBox.SetActive(true);
+        _ContinueButton.SetActive(true);
         _answerText.text = _textToChange;
-        
+
     }
 }

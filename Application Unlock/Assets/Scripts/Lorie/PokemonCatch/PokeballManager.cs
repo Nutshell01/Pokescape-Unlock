@@ -17,8 +17,12 @@ public class PokeballManager : MonoBehaviour
         {
             StartCoroutine("CatchPokemon", other.gameObject);
         }
+       
     }
 
+
+
+  
     IEnumerator CatchPokemon(GameObject Pokemon)
     {
         transform.Translate(Vector3.up * 1, Space.World);

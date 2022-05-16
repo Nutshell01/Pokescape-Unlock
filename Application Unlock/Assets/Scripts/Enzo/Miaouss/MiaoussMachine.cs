@@ -11,9 +11,9 @@ public class MiaoussMachine : MonoBehaviour
     [SerializeField] TextMeshProUGUI _answerText;
     [SerializeField] string _wrongText;
     [SerializeField] string _textToChange;
+    [SerializeField] GameObject _ContinueButton;
     
     #endregion
-  
 
     public void Check()
     {
@@ -31,10 +31,16 @@ public class MiaoussMachine : MonoBehaviour
         if (AllTrue)
         {
             _answerText.text = _textToChange;
+            _ContinueButton.SetActive(true);
         }
         else
         {
-             _answerText.text = _wrongText;
+            _answerText.text = _wrongText;
+            _ContinueButton.SetActive(false);
         }
     }
+
+   
+
+
 }

@@ -9,11 +9,14 @@ public class DialogPsytigri : MonoBehaviour
     public string[] sentences;
     private int index;
     public float typingSpeed;
+    public GameObject Fond;
+    public GameObject CarteDrop;
 
     public GameObject continueButton;
 
     void Start()
     {
+        CarteDrop.SetActive(false);
         index = 0;
         textDisplay.text = "";
         StartCoroutine(Type());
@@ -26,6 +29,8 @@ public class DialogPsytigri : MonoBehaviour
             continueButton.SetActive(true);
 
         }
+
+
     }
 
     IEnumerator Type()
@@ -59,6 +64,8 @@ public class DialogPsytigri : MonoBehaviour
         {
             textDisplay.text = "";
             continueButton.SetActive(false);
+            Fond.SetActive(false);
+            CarteDrop.SetActive(true);
 
         }
     }
