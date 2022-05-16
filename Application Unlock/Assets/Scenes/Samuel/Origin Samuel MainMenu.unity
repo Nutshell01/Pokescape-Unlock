@@ -4210,7 +4210,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4015223387291841426, guid: 2f835fd53de586446982f43ce2bedbcd, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4015223388342989480, guid: 2f835fd53de586446982f43ce2bedbcd, type: 3}
       propertyPath: m_Name
@@ -4299,6 +4299,10 @@ PrefabInstance:
     - target: {fileID: 4015223388342989484, guid: 2f835fd53de586446982f43ce2bedbcd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015223388342989487, guid: 2f835fd53de586446982f43ce2bedbcd, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4116631629605598293, guid: 2f835fd53de586446982f43ce2bedbcd, type: 3}
       propertyPath: m_AnchorMax.y
