@@ -59,9 +59,16 @@ public class MachineManager : MonoBehaviour
 
     public void DisplayMachine(int _index)
     {
-        machines[_index].SetActive(true);
+        if(_index == 11)
+        {
+            machines[_index].GetComponent<Canvas>().enabled = true;
+        }
+        else
+        {
+            machines[_index].SetActive(true);
+        }
         _disableScript._CurrentMachine = machines[_index];
-        if(_index == 11 || _index == 10)
+        if(_index == 10 || _index == 9)
         {
             dialogChoice.CheckStarter();
         }
